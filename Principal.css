@@ -1,0 +1,633 @@
+body{
+
+background-color: black;
+overflow-x: hidden;
+overflow-y: scroll;
+
+}
+
+
+#tudo{
+
+background-color: rgb(225,225,225);
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+z-index: 4;
+
+}
+
+#tudo:hover{
+
+cursor: default;
+
+}
+
+h1{
+
+font-size: 25px;
+
+}
+
+h2{
+
+position: absolute;
+right: 8.7%;
+top: 3%;
+
+}
+
+#titulo{
+
+font-size: 54px;
+text-align: center;
+z-index: 5 !important;
+
+}
+
+div.tabela{
+
+position: relative;
+left: 1.5%;
+display: grid;
+grid-gap: 0px;
+top: 0px;
+grid-auto-columns: 5.38%;
+grid-auto-rows: 14%;
+gap: 1px;
+
+}
+
+div.tabela2{
+
+position: relative;
+left: 6.88%;
+display: grid;
+grid-gap: 0px;
+top: 25px;
+grid-auto-columns: 5.38%;
+gap: 1px;
+
+}
+
+#dica{
+
+position: absolute;
+top: -20%;
+left: 2%;
+
+}
+
+#dica:hover{
+
+transform: scale(1.2);
+
+}
+
+.info{
+
+position: absolute;
+left: 16.14%;
+width: 21%;
+height: 200px;
+opacity: 0;
+transition: 0.75s;
+border: 5px solid;
+background: white !important;
+color: black;
+padding-left: 5%;
+
+}
+
+.info2{
+
+position: absolute;
+left: -5%;
+width: 15%;
+height: 100%;
+opacity: 0;
+transition: 0.75s;
+border: 5px solid;
+background: white !important;
+color: black;
+line-height: 100%;
+padding-left: 2%;
+
+}
+
+.elemento{
+
+transition: 0.4;
+position: relative;
+padding: 10% 0%;
+border: 1px solid black !important;
+text-align: center;
+z-index: 6;
+
+}
+
+.elemento:hover{
+
+transition: 0.4s;
+transform: scale(1.2);
+color: white;
+padding: 10% 0%;
+border: 1px solid snow;
+z-index: 7;
+color: lavender;
+
+}
+
+.ametal:hover{
+
+color: seagreen !important;
+
+}
+
+.elemento:active{
+
+transform: scale(1.5);
+
+}
+
+.nome{
+
+right: 0;
+left: 0;
+position: absolute;
+bottom: -11.5%;
+z-index: 8;
+font-size: 68%;
+font-family: "Verdana", sans-serif;
+
+}
+
+.grande{
+
+bottom: -10%;
+font-size: 62% !important;
+
+}
+
+.ametal{
+
+background-color: lightgreen ;
+border-color: lightgreen ;
+
+}
+
+.alcalino{
+
+background-color: orange ;
+border-color: orange ;
+
+}
+
+.terroso{
+
+background-color: rgb(218, 204, 85) ;
+border-color: rgb(218, 204, 85) ;
+
+}
+
+.transição{
+
+background-color: salmon ;
+border-color: salmon ;
+
+}
+
+.nobre{
+
+background-color: royalblue ;
+border-color: royalblue ;
+
+}
+
+.halo{
+
+background-color: lightblue ;
+border-color: lightblue ;
+
+}
+
+.semi{
+
+background-color: lightseagreen ;
+border-color: lightseagreen ;
+
+}
+
+.outros{
+
+background-color: steelblue ;
+border-color: steelblue ;
+
+}
+
+.lanta{
+
+background-color: paleturquoise ;
+border-color: paleturquoise ;
+
+}
+
+.act{
+
+background-color: plum ;
+border-color: plum;
+
+}
+
+div.legenda{
+
+columns: 5 20px;
+position: relative;
+top: 50px;
+left: 5%;
+
+}
+
+div.ametais{
+
+width: 20px;
+height: 20px;
+border: 1px solid;
+background-color: lightgreen;
+
+}
+
+div.alcalinos{
+
+width: 20px;
+height: 20px;
+border: 1px solid;
+background-color: orange;
+
+}
+
+div.terrosos{
+
+width: 20px;
+height: 20px;
+border: 1px solid;
+background-color: yellow;
+
+}
+
+div.metais{
+
+width: 20px;
+height: 20px;
+border: 1px solid;
+background-color: salmon;
+
+}
+
+div.nobres{
+
+width: 20px;
+height: 20px;
+border: 1px solid;
+background-color: royalblue;
+
+}
+
+div.halos{
+
+width: 20px;
+height: 20px;
+border: 1px solid;
+background-color: lightblue;
+
+}
+
+div.semimetais{
+
+width: 20px;
+height: 20px;
+border: 1px solid;
+background-color: lightseagreen;
+
+}
+
+div.outro{
+
+width: 20px;
+height: 20px;
+border: 1px solid;
+background-color: steelblue;
+
+}
+
+div.lantas{
+
+width: 20px;
+height: 20px;
+border: 1px solid;
+background-color: paleturquoise;
+
+}
+
+div.acts{
+
+width: 20px;
+height: 20px;
+border: 1px solid;
+background-color: plum;
+
+}
+
+.legenda_texto{
+
+position: relative;
+left: 30px;
+bottom: 41px;
+
+}
+
+.elemento:hover + .info{
+
+opacity: 1;
+transition: 0.75s;
+
+}
+
+.elemento:hover + .info2{
+
+opacity: 1;
+transition: 0.75s;
+
+}
+
+a{
+
+text-decoration: none;
+color: black;
+
+}
+
+.Zu{
+
+left: 17.5%;
+position: absolute;
+top: -5%;
+
+}
+
+.Zd{
+
+left: 8%;
+position: absolute;
+top: -5%;
+
+}
+
+.Zt{
+
+left: 2%;
+position: absolute;
+top: -5%;
+
+}
+
+input[type="checkbox"]{
+
+position: absolute;
+z-index: 10;
+top: 7%;
+right: 17.5%;
+transform: scale(1.8);
+
+}
+
+input[type="checkbox"]:checked + #tudo{
+
+filter: invert(1);
+
+}
+
+input[type="checkbox"]:checked ~ #tudo .elemento{
+
+border-color: #FFFAFA !important;
+filter: invert(1);
+
+}
+
+input[type="checkbox"]:checked ~ #tudo .ametais{
+
+filter: invert(1);
+
+}
+
+input[type="checkbox"]:checked ~ #tudo .alcalinos{
+
+filter: invert(1);
+
+}
+
+input[type="checkbox"]:checked ~ #tudo .terrosos{
+
+filter: invert(1);
+
+}
+
+input[type="checkbox"]:checked ~ #tudo .metais{
+
+filter: invert(1);
+
+}
+
+input[type="checkbox"]:checked ~ #tudo .nobres{
+
+filter: invert(1);
+
+}
+
+input[type="checkbox"]:checked ~ #tudo .halos{
+
+filter: invert(1);
+
+}
+
+input[type="checkbox"]:checked ~ #tudo .semimetais{
+
+filter: invert(1);
+
+}
+
+input[type="checkbox"]:checked ~ #tudo .outro{
+
+filter: invert(1);
+
+}
+
+input[type="checkbox"]:checked ~ #tudo .lantas{
+
+filter: invert(1);
+
+}
+
+input[type="checkbox"]:checked ~ #tudo .acts{
+
+filter: invert(1);
+
+}
+
+input[type="checkbox"]:checked ~ #tudo .info{
+
+filter: invert(1);
+background-color: rgb(63, 58, 58) !important;
+color: white !important;
+
+}
+
+input[type="checkbox"]:checked ~ #tudo .info2{
+
+filter: invert(1);
+background-color: rgb(63, 58, 58) !important;
+color: white !important;
+
+}
+
+ /* Familia 1 */
+.H { grid-area: 1 / 1; }
+.Li{ grid-area: 2 / 1; }
+.Na{ grid-area: 3 / 1; }
+.K { grid-area: 4 / 1; }
+.Rb{ grid-area: 5 / 1; }
+.Cs{ grid-area: 6 / 1; }
+.Fr{ grid-area: 7 / 1; }
+ /* Familia 2*/
+.Be{ grid-area: 2 / 2; }
+.Mg{ grid-area: 3 / 2; }
+.Ca{ grid-area: 4 / 2; }
+.Sr{ grid-area: 5 / 2; }
+.Ba{ grid-area: 6 / 2; }
+.Ra{ grid-area: 7 / 2; }
+ /* Familia 3*/
+.Sc{ grid-area: 4 / 3; }
+.Y { grid-area: 5 / 3; }
+.La{ grid-area: 6 / 3; }
+.Ac{ grid-area: 7 / 3; }
+ /* Familia 4*/
+.Ti{ grid-area: 4 / 4; }
+.Zr{ grid-area: 5 / 4; }
+.Hf{ grid-area: 6 / 4; }
+.Rf{ grid-area: 7 / 4; }
+ /* Familia 5*/
+.V { grid-area: 4 / 5; }
+.Nb{ grid-area: 5 / 5; }
+.Ta{ grid-area: 6 / 5; }
+.Db{ grid-area: 7 / 5; }
+ /* Familia 6*/
+.Cr{ grid-area: 4 / 6; }
+.Mo{ grid-area: 5 / 6; }
+.W { grid-area: 6 / 6; }
+.Sg{ grid-area: 7 / 6; }
+ /* Familia 7*/
+.Mn{ grid-area: 4 / 7; }
+.Tc{ grid-area: 5 / 7; }
+.Re{ grid-area: 6 / 7; }
+.Bh{ grid-area: 7 / 7; }
+/* Familia 8*/
+.Fe{ grid-area: 4 / 8; }
+.Ru{ grid-area: 5 / 8; }
+.Os{ grid-area: 6 / 8; }
+.Hs{ grid-area: 7 / 8; }
+/* Familia 9*/
+.Co{ grid-area: 4 / 9; }
+.Rh{ grid-area: 5 / 9; }
+.Ir{ grid-area: 6 / 9; }
+.Mt{ grid-area: 7 / 9; }
+/* Familia 10*/
+.Ni{ grid-area: 4 / 10; }
+.Pd{ grid-area: 5 / 10; }
+.Pt{ grid-area: 6 / 10; }
+.Ds{ grid-area: 7 / 10; }
+/* Familia 11*/
+.Cu{ grid-area: 4 / 11; }
+.Ag{ grid-area: 5 / 11; }
+.Au{ grid-area: 6 / 11; }
+.Rg{ grid-area: 7 / 11; }
+/* Familia 12*/
+.Zn{ grid-area: 4 / 12; }
+.Cd{ grid-area: 5 / 12; }
+.Hg{ grid-area: 6 / 12; }
+.Cn{ grid-area: 7 / 12; }
+/* Familia 13*/
+.B { grid-area: 2 / 13; }
+.Al{ grid-area: 3 / 13; }
+.Ga{ grid-area: 4 / 13; }
+.In{ grid-area: 5 / 13; }
+.Tl{ grid-area: 6 / 13; }
+.Nh{ grid-area: 7 / 13; }
+/* Familia 14*/
+.C { grid-area: 2 / 14; }
+.Si{ grid-area: 3 / 14; }
+.Ge{ grid-area: 4 / 14; }
+.Sn{ grid-area: 5 / 14; }
+.Pb{ grid-area: 6 / 14; }
+.Fl{ grid-area: 7 / 14; }
+/* Familia 15*/
+.N { grid-area: 2 / 15; }
+.P { grid-area: 3 / 15; }
+.As{ grid-area: 4 / 15; }
+.Sb{ grid-area: 5 / 15; }
+.Bi{ grid-area: 6 / 15; }
+.Mc{ grid-area: 7 / 15; }
+/* Familia 16*/
+.O { grid-area: 2 / 16; }
+.S { grid-area: 3 / 16; }
+.Se{ grid-area: 4 / 16; }
+.Te{ grid-area: 5 / 16; }
+.Po{ grid-area: 6 / 16; }
+.Lv{ grid-area: 7 / 16; }
+/* Familia 17*/
+.F { grid-area: 2 / 17; }
+.Cl{ grid-area: 3 / 17; }
+.Br{ grid-area: 4 / 17; }
+.I { grid-area: 5 / 17; }
+.At{ grid-area: 6 / 17; }
+.Ts{ grid-area: 7 / 17; }
+/* Familia 18*/
+.He{ grid-area: 1 / 18; }
+.Ne{ grid-area: 2 / 18; }
+.Ar{ grid-area: 3 / 18; }
+.Kr{ grid-area: 4 / 18; }
+.Xe{ grid-area: 5 / 18; }
+.Rn{ grid-area: 6 / 18; }
+.Og{ grid-area: 7 / 18; }
+
+/* Lantanideos */
+.Ce{ grid-area: 1 / 4; }
+.Pr{ grid-area: 1 / 5; }
+.Nd{ grid-area: 1 / 6; }
+.Pm{ grid-area: 1 / 7; }
+.Sm{ grid-area: 1 / 8; }
+.Eu{ grid-area: 1 / 9; }
+.Gd{ grid-area: 1 / 10; }
+.Tb{ grid-area: 1 / 11; }
+.Dy{ grid-area: 1 / 12; }
+.Ho{ grid-area: 1 / 13; }
+.Er{ grid-area: 1 / 14; }
+.Tm{ grid-area: 1 / 15; }
+.Yb{ grid-area: 1 / 16; }
+.Lu{ grid-area: 1 / 17; }
+
+/* Lantanideos */
+.Th{ grid-area: 2 / 4; }
+.Pa{ grid-area: 2 / 5; }
+.U { grid-area: 2 / 6; }
+.Np{ grid-area: 2 / 7; }
+.Pu{ grid-area: 2 / 8; }
+.Am{ grid-area: 2 / 9; }
+.Cm{ grid-area: 2 / 10; }
+.Bk{ grid-area: 2 / 11; }
+.Cf{ grid-area: 2 / 12; }
+.Es{ grid-area: 2 / 13; }
+.Fm{ grid-area: 2 / 14; }
+.Md{ grid-area: 2 / 15; }
+.No{ grid-area: 2 / 16; }
+.Lr{ grid-area: 2 / 17; }
