@@ -3,21 +3,32 @@ body {
     background-color: white;
 
 }
+
+img{
+
+    width:15%;
+    top: 5%;
+
+}
+
 .baseinfo{
 
+    padding-left: 1%;
     position:absolute;
-    left: 250px;
-    top: 40px;
+    top: 6%;
+    width: 24%;
+    left:16%;
     border:3px solid lightcoral;
 
 }
 
 .info{
 
-    position: relative;
-    top: 20px;
+    padding-left: 1%;
+    position: absolute;
+    top: 37.5%;
     border:3px solid lightgreen;
-    width: 50%;
+    width: 39.5%;
 
 }
 
