@@ -9,6 +9,8 @@ overflow-y: auto;
 
 #tudo{
 
+width: 100%;
+height: 100%;
 background-color: rgb(225,225,225);
 position: absolute;
 top: 0;
