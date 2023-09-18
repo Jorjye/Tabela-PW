@@ -41,12 +41,12 @@ img{
 .home{
 
     z-index: 10;
-    position: relative;
-    bottom: 10%;
+    position: static;
+    top: 20%;
     border: 3px black;
-    padding: 5px;
-    background-color: lightgray;
-    text-decoration: none;
-    color: black;
-    
+    padding: 0.5%;
+    background-color: ;
+    text-decoration: underline overline;
+    color: blue;
+
 }
