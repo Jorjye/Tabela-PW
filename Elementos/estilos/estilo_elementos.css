@@ -42,7 +42,7 @@ img{
 
     z-index: 10;
     position: relative;
-    top: 10%;
+    bottom: 10%;
     border: 3px black;
     padding: 5px;
     background-color: lightgray;
