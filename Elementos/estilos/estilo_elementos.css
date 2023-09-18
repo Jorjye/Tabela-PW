@@ -41,8 +41,8 @@ img{
 .home{
 
     z-index: 10;
-    position: static;
-    top: 20%;
+    position: absolute;
+    top: 55%;
     border: 3px black;
     padding: 0.5%;
     background-color: ;
