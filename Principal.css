@@ -242,14 +242,14 @@ z-index: 10;
 
 .halo{
 
-background-color: cornflowerblue ;
-border-color: cornflowerblue ;
+background-color: royalblue ;
+border-color: royalblue ;
 
 }
 
 .halo:hover{
 
-background-color: rgb(70, 119, 207) ;
+background-color: rgb(35, 75, 195) ;
 z-index: 10;
 
 }
@@ -269,14 +269,14 @@ background-color: rgb(0, 98, 98) ;
 
 .outros{
 
-background-color: steelblue ;
-border-color: steelblue ;
+background-color: cornflowerblue ;
+border-color: cornflowerblue ;
 
 }
 
 .outros:hover{
 
-background-color: rgb(40, 100, 150) ;
+background-color: rgb(70, 119, 207) ;
 z-index: 10;
 
 }
@@ -368,7 +368,7 @@ div.halos{
 width: 20px;
 height: 20px;
 border: 1px solid;
-background-color: cornflowerblue;
+background-color: royalblue;
 
 }
 
@@ -386,7 +386,7 @@ div.outro{
 width: 20px;
 height: 20px;
 border: 1px solid;
-background-color: steelblue;
+background-color: cornflowerblue;
 
 }
 
@@ -690,7 +690,7 @@ color: white !important;
 .Yb{ grid-area: 1 / 16; }
 .Lu{ grid-area: 1 / 17; }
 
-/* Actinídios */
+/* Lantanideos */
 .Th{ grid-area: 2 / 4; }
 .Pa{ grid-area: 2 / 5; }
 .U { grid-area: 2 / 6; }
