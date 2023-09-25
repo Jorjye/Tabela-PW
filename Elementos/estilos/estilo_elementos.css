@@ -1,53 +1,118 @@
 body {
-
     background-color: white;
-
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-img{
-
-    width:15%;
-    top: 5%;
-
-}
-
-.baseinfo{
-
-    padding-left: 1%;
-    position:absolute;
-    top: 6%;
-    width: 24%;
-    left:16%;
-    border:3px solid lightcoral;
-
-}
-
-.info{
-
-    padding-left: 1%;
-    position: absolute;
-    top: 43.5%;
-    border:3px solid lightgreen;
-    width: 39.5%;
-
-}
-
-.texto_extra {
-
-    border: 3px solid lightskyblue;
-
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .home{
-
-    z-index: 10;
-    position: absolute;
-    top: 61%;
+    text-align: center;
+    position: relative;
     border: 3px black;
     padding: 0.5%;
-    background-color: ;
     text-decoration: underline overline;
-    color: blue;
-    text-align: left;
+    color: rgb(21, 14, 122);
+}
 
+img{
+    width:15%;
+    top: 5%;
+}
+.baseinfo{
+    position:relative;
+}
+
+.info{
+    position:relative;
+}
+
+.alcalinos {
+    background-color: rgb(209, 167, 69);
+}
+.alcalinos-m {
+    background-color: rgb(245, 201, 96);
+    border:3px solid rgb(245, 201, 96);
+}
+
+.terroso {
+    background-color:rgb(201, 191, 57);
+}
+.terroso-m {
+    background-color: rgb(223, 212, 70);
+    border:3px solid rgb(223, 212, 70);
+}
+
+.boro {
+    background-color: teal;
+}
+
+.boro-m {
+    background-color:rgb(16, 175, 175);
+    border:3px solid rgb(16, 175, 175);
+}
+
+.nobre {
+    background-color: rebeccapurple;
+}
+
+.nobre-m {
+    background-color: rgb(144, 83, 204);
+    border:3px solid rgb(144, 83, 204);
+}
+
+.ametais {
+    background-color: rgb(129, 158, 71);
+}
+
+.ametais-m {
+    background-color:rgb(174, 204, 113);
+    border:3px solid rgb(174, 204, 113);
+}
+
+.halo {
+    background-color: royalblue;
+}
+
+.halo-m {
+    background-color:rgb(119, 146, 230);
+    border:3px solid rgb(119, 146, 230);
+}
+
+.transição {
+    background-color: rgb(128, 40, 40);
+}
+
+.transição-m {
+    background-color:rgb(180, 70, 70);
+    border:3px solid rgb(180, 70, 70);
+}
+
+.outros {
+    background-color: dodgerblue;
+}
+
+.outros-m {
+    background-color:rgb(101, 168, 235);
+    border:3px solid rgb(101, 168, 235);
+}
+
+.lanta {
+    background-color: rgb(68, 170, 136);
+}
+
+.lanta-m {
+    background-color:rgb(129, 199, 176);
+    border:3px solid rgb(129, 199, 176);
+}
+
+.act {
+    background-color: rgb(185, 117, 185);
+}
+
+.act-m {
+    background-color:plum;
+    border:3px solid plum;
 }
