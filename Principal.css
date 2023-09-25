@@ -269,14 +269,14 @@ background-color: rgb(0, 98, 98) ;
 
 .outros{
 
-background-color: cornflowerblue ;
-border-color: cornflowerblue ;
+background-color: dodgerblue ;
+border-color: dodgerblue ;
 
 }
 
 .outros:hover{
 
-background-color: rgb(70, 119, 207) ;
+background-color: rgb(0, 114, 225) ;
 z-index: 10;
 
 }
@@ -386,7 +386,7 @@ div.outro{
 width: 20px;
 height: 20px;
 border: 1px solid;
-background-color: cornflowerblue;
+background-color: dodgerblue;
 
 }
 
