@@ -471,62 +471,62 @@ input[type="checkbox"] {
 
 }
 
-input[type="checkbox"]:checked~#tudo {
+input[type="checkbox"]:checked~body {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo header {
+input[type="checkbox"]:checked~body header {
 
     filter: invert(1);
     background-color: rgb(70, 70, 70);
 
 }
 
-input[type="checkbox"]:checked~#tudo header nav ul .principal {
+input[type="checkbox"]:checked~body header nav ul .principal {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo header nav ul .principal:hover {
+input[type="checkbox"]:checked~body header nav ul .principal:hover {
 
     background-color: rgb(215, 215, 215);
 
 }
 
-input[type="checkbox"]:checked~#tudo header nav ul .historia {
+input[type="checkbox"]:checked~body header nav ul .historia {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo header nav ul .historia:hover {
+input[type="checkbox"]:checked~body header nav ul .historia:hover {
 
     background-color: rgb(215, 215, 215);
 
 }
 
-input[type="checkbox"]:checked~#tudo header nav ul .sobre {
+input[type="checkbox"]:checked~body header nav ul .sobre {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo header nav ul .sobre:hover {
+input[type="checkbox"]:checked~body header nav ul .sobre:hover {
 
     background-color: rgb(215, 215, 215);
 
 }
 
-input[type="checkbox"]:checked~#tudo header nav ul .cont {
+input[type="checkbox"]:checked~body header nav ul .cont {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo header nav ul .cont:hover {
+input[type="checkbox"]:checked~body header nav ul .cont:hover {
 
     background-color: rgb(215, 215, 215);
 
