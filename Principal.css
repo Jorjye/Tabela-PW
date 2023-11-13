@@ -9,7 +9,6 @@ body {
 
 #tudo {
 
-    background-color: rgb(225, 225, 225);
     position: absolute;
     top: 0;
     right: 0;
@@ -1154,7 +1153,7 @@ nav a {
 }
 
 .contato {
-    background-image: url(img/back.png);
+    background-image: url(img/back.png) !important;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
