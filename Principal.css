@@ -16,12 +16,6 @@ body {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 4;
-
-}
-
-#tudo:hover {
-
     cursor: default;
 
 }
@@ -486,49 +480,13 @@ input[type="checkbox"]:checked~#tudo header {
 
 }
 
-input[type="checkbox"]:checked~#tudo header nav ul .principal {
+input[type="checkbox"]:checked~#tudo header nav ul .menu {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo header nav ul .principal:hover {
-
-    background-color: rgb(215, 215, 215);
-
-}
-
-input[type="checkbox"]:checked~#tudo header nav ul .historia {
-
-    filter: invert(1);
-
-}
-
-input[type="checkbox"]:checked~#tudo header nav ul .historia:hover {
-
-    background-color: rgb(215, 215, 215);
-
-}
-
-input[type="checkbox"]:checked~#tudo header nav ul .sobre {
-
-    filter: invert(1);
-
-}
-
-input[type="checkbox"]:checked~#tudo header nav ul .sobre:hover {
-
-    background-color: rgb(215, 215, 215);
-
-}
-
-input[type="checkbox"]:checked~#tudo header nav ul .cont {
-
-    filter: invert(1);
-
-}
-
-input[type="checkbox"]:checked~#tudo header nav ul .cont:hover {
+input[type="checkbox"]:checked~#tudo header nav ul .menu:hover {
 
     background-color: rgb(215, 215, 215);
 
@@ -1135,17 +1093,14 @@ header {
     color: black;
     padding: 1px;
     gap: 10px;
+    border-bottom: 1px black solid;
+    box-shadow: 0px 0px 5px black;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 20px;
 }
 
 nav a {
@@ -1165,58 +1120,18 @@ nav a {
     position: inherit;
 }
 
-.principal{
+.menu{
 
-padding: 10px;
-border-radius: 5%;
-
-}
-
-.principal:hover{
-
-transform: scale(1.3);
-background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin-right: 20px;    
+    padding: 10px;
+    border-radius: 5%;
 
 }
 
-.historia{
+.menu:hover{
 
-padding: 10px;
-border-radius: 5%;
-
-}
-
-.historia:hover{
-
-transform: scale(1.3);
-background-color: rgba(0, 0, 0, 0.5);
-
-}
-
-.sobre{
-
-padding: 10px;
-border-radius: 5%;
-
-}
-
-.sobre:hover{
-
-transform: scale(1.3);
-background-color: rgba(0, 0, 0, 0.5);
-
-}
-
-.cont{
-
-padding: 10px;
-border-radius: 5%;
-
-}
-
-.cont:hover{
-
-transform: scale(1.3);
-background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.3);
+    background-color: rgba(0, 0, 0, 0.5);
 
 }
