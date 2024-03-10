@@ -1,99 +1,1678 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br" dir="ltr">
+
 <head>
-    <title> História da tabela </title>
-    <link rel="stylesheet" type="text/css" href="Principal.css" />
+    <link rel="stylesheet" href="Principal.css">
+    <meta charset="utf-8">
+    <title>Tabela Periódica</title>
+    <script>
+        var link = 'negado.html';
+        var si = 'index.html';
+    
+        function Link(url) {
+            window.location.href = url;
+        }
+    
+        function OneTime(url) {
+            // Verifica se já ocorreu o redirecionamento
+            if (localStorage.getItem('Redirecionado') === 'true') {
+                return; // Encerra a função se já houve redirecionamento
+            }
+    
+            var senha = prompt("Escreva a senha: ");
+            if (senha == 881 || senha == 'senha') {
+                localStorage.setItem('LinkAberto', 'true');
+                localStorage.setItem('DataUltimaSenha', new Date().toLocaleDateString());
+                localStorage.setItem('Redirecionado', 'true');
+                alert("Senha correta! Bem-vindo à Tabela");
+                if (window.location.href !== url) {
+                    Link(url); // Redireciona apenas se o URL de destino for diferente do URL atual
+                }
+            } else {
+                Link(link); // Redireciona imediatamente se a senha estiver incorreta
+            }
+        }
+    
+        // Chama a função apenas quando a página é carregada
+        window.onload = function() {
+            OneTime(si);
+        };
+    </script>
 </head>
-<body class="contato">
+
+<body>
     <input type="checkbox" id="checkbox" />
     <h2>Modo Escuro</h2>
     <div id="tudo">
-    <header>
-        <nav>
-          <ul>
-              <li class="principal"><a href="index.html"> Tabela Periódica </a></li>
-              <li class="historia"><a href="historia.html">História da Tabela</a></li>
-              <li class="sobre"><a href="sobre.html"> Sobre o Projeto </a></li>
-              <li class="cont"><a href="contato.html"> Contato </a></li>
-          </ul>
-        </nav>
-    </header>
-    <div class="content">
-        <h1> História da Tabela </h1>
-        <p class="parte1"> A tabela periódica se originou no começo do séc XIX, por volta de 1829. Nessa época, os químicos
-            decidiram
-            organizar os elementos químicos conhecidos. Eles já tinham conhecimento sobre diversas características, como a
-            densidade, massa atômica, relatividade, ponto de fusão/ebulição e estado físico de 30 elementos. Essas
-            informações foram o ponto de partida para a criação da tabela periódica.
-            <br>
-            Durante 200 anos, diversos químicos buscaram encontrar uma forma de organizar os elementos. A Tabela Periódica
-            que conhecemos hoje já teve muitas versões, frutos de incontáveis tentativas de atingir a organização.
-        </p>
-        <div class="Johann">
-            <h2 class="h"> Johann Döbereiner: Lei das Tríades </h2>
-            <p>
-                Johann W. Döbereiner (1780-1849) foi um dos primeiros a encontrar uma ordem para organizar os elementos
-                químicos. Usando as massas atômicas estimadas, ele organizou os elementos em grupos de três, todos com
-                propriedades semelhantes. Nesses grupos, o elemento central tinha como massa a média aritmética dos outros
-                dois elementos. Porém, isso não acontecia com todos os elementos.
-            </p>
-            <img src="img/tríades.jpg">
-            <p> Como podemos observar na tabela, a massa atômica do elemento sódio corresponde à média aritmética dos outros
-                dois elementos: Lítio e potássio.
-            </p>
-            <img src="img/massas.jpg">
+        <header>
+            <nav>
+                <ul>
+                    <a href="index.html" class="menu"> Tabela Periódica </a>
+                    <a href="historia.html" class="menu">História da Tabela</a>
+                    <a href="sobre.html" class="menu"> Sobre o Projeto </a>
+                    <a href="contato.html" class="menu"> Contato </a>
+                </ul>
+            </nav>
+        </header>
+        <h1 id="titulo">Tabela Periódica</h1>
+        <div class="tabela">
+            <h4 id="dica"><em>Clique nos elementos para mais informações</em></h4>
+            <a href="Elementos\1_ElementoHidrogênio.html" class="elemento ametal H">
+                <h1>H</h1>
+                <div class="Zu">
+                    <p>1</p>
+                </div>
+                <div class="nome">
+                    <p>Hidrogênio</p>
+                </div>
+            </a>
+            <div class="info ametal">
+                <h1>Hidrogênio</h1> <br>
+                <h3>Z=1 <br> Período: 1 <br>Família: 1 </h3>
+            </div>
+            <a href="Elementos\3_ElementoLítio.html" class="elemento alcalino Li">
+                <h1>Li</h1>
+                <div class="Zu">
+                    <p>3</p>
+                </div>
+                <div class="nome">
+                    <p>Lítio</p>
+                </div>
+            </a>
+            <div class="info alcalino">
+                <h1>Lítio</h1> <br>
+                <h3>Z=3 <br> Período: 2 <br>Família: 1 </h3>
+            </div>
+            <a href="Elementos\11_ElementoSódio.html" class="elemento alcalino Na">
+                <h1>Na</h1>
+                <div class="Zd">
+                    <p>11</p>
+                </div>
+                <div class="nome">
+                    <p>Sódio</p>
+                </div>
+            </a>
+            <div class="info alcalino">
+                <h1>Sódio</h1> <br>
+                <h3>Z=11 <br> Período: 3 <br>Família: 1 </h3>
+            </div>
+            <a href="Elementos\19_ElementoPotássio.html" class="elemento alcalino K">
+                <h1>K</h1>
+                <div class="Zd">
+                    <p>19</p>
+                </div>
+                <div class="nome">
+                    <p>Potássio</p>
+                </div>
+            </a>
+            <div class="info alcalino">
+                <h1>Potássio</h1> <br>
+                <h3>Z=19 <br> Período: 4 <br>Família: 1 </h3>
+            </div>
+            <a href="Elementos\37_ElementoRubídio.html" class="elemento alcalino Rb">
+                <h1>Rb</h1>
+                <div class="Zd">
+                    <p>37</p>
+                </div>
+                <div class="nome">
+                    <p>Rubídio</p>
+                </div>
+            </a>
+            <div class="info alcalino">
+                <h1>Rubídio</h1> <br>
+                <h3>Z=37 <br> Período: 5 <br>Família: 1 </h3>
+            </div>
+            <a href="Elementos\55_ElementoCésio.html" class="elemento alcalino Cs">
+                <h1>Cs</h1>
+                <div class="Zd">
+                    <p>55</p>
+                </div>
+                <div class="nome">
+                    <p>Césio</p>
+                </div>
+            </a>
+            <div class="info alcalino">
+                <h1>Césio</h1> <br>
+                <h3>Z=55 <br> Período: 6 <br>Família: 1 </h3>
+            </div>
+            <a href="Elementos\87_ElementoFrâncio.html" class="elemento alcalino Fr">
+                <h1>Fr</h1>
+                <div class="Zd">
+                    <p>87</p>
+                </div>
+                <div class="nome">
+                    <p>Frâncio</p>
+                </div>
+            </a>
+            <div class="info alcalino">
+                <h1>Frâncio</h1> <br>
+                <h3>Z=87 <br> Período: 7 <br>Família: 1 </h3>
+            </div>
+
+            <a href="Elementos\4_ElementoBerílio.html" class="elemento terroso Be">
+                <h1>Be</h1>
+                <div class="Zu">
+                    <p>4</p>
+                </div>
+                <div class="nome">
+                    <p>Berílio</p>
+                </div>
+            </a>
+            <div class="info terroso">
+                <h1>Berílio</h1> <br>
+                <h3>Z=4 <br> Período: 2 <br>Família: 2 </h3>
+            </div>
+            <a href="Elementos\12_ElementoMagnésio.html" class="elemento terroso Mg">
+                <h1>Mg</h1>
+                <div class="Zd">
+                    <p>12</p>
+                </div>
+                <div class="nome">
+                    <p>Magnésio</p>
+                </div>
+            </a>
+            <div class="info terroso">
+                <h1>Magnésio</h1> <br>
+                <h3>Z=12 <br> Período: 3 <br>Família: 2 </h3>
+            </div>
+            <a href="Elementos\20_ElementoCálcio.html" class="elemento terroso Ca">
+                <h1>Ca</h1>
+                <div class="Zd">
+                    <p>20</p>
+                </div>
+                <div class="nome">
+                    <p>Cálcio</p>
+                </div>
+            </a>
+            <div class="info terroso">
+                <h1>Cálcio</h1> <br>
+                <h3>Z=20 <br> Período: 4 <br>Família: 2 </h3>
+            </div>
+            <a href="Elementos\38_ElementoEstrôncio.html" class="elemento terroso Sr">
+                <h1>Sr</h1>
+                <div class="Zd">
+                    <p>38</p>
+                </div>
+                <div class="nome">
+                    <p>Estrôncio</p>
+                </div>
+            </a>
+            <div class="info terroso">
+                <h1>Estrôncio</h1> <br>
+                <h3>Z=38 <br> Período: 5 <br>Família: 2 </h3>
+            </div>
+            <a href="Elementos\56_ElementoBário.html" class="elemento terroso Ba">
+                <h1>Ba</h1>
+                <div class="Zd">
+                    <p>56</p>
+                </div>
+                <div class="nome">
+                    <p>Bário</p>
+                </div>
+            </a>
+            <div class="info terroso">
+                <h1>Bário</h1> <br>
+                <h3>Z=56 <br> Período: 6 <br>Família: 2 </h3>
+            </div>
+            <a href="Elementos\88_ElementoRádio.html" class="elemento terroso Ra">
+                <h1>Ra</h1>
+                <div class="Zd">
+                    <p>88</p>
+                </div>
+                <div class="nome">
+                    <p>Rádio</p>
+                </div>
+            </a>
+            <div class="info terroso">
+                <h1>Rádio</h1> <br>
+                <h3>Z=88 <br> Período: 7 <br>Família: 2 </h3>
+            </div>
+
+
+
+
+            <a href="Elementos\21_ElementoEscândio.html" class="elemento transição Sc">
+                <h1>Sc</h1>
+                <div class="Zd">
+                    <p>21</p>
+                </div>
+                <div class="nome">
+                    <p>Escândio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Escândio</h1> <br>
+                <h3>Z=21 <br> Período: 4 <br>Família: 3 </h3>
+            </div>
+            <a href="Elementos\39_ElementoÍtrio.html" class="elemento transição Y">
+                <h1>Y</h1>
+                <div class="Zd">
+                    <p>39</p>
+                </div>
+                <div class="nome">
+                    <p>Ítrio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Ítrio</h1> <br>
+                <h3>Z=39 <br> Período: 5 <br>Família: 3 </h3>
+            </div>
+            <a href="Elementos\57_ElementoLantânio.html" class="elemento lanta La">
+                <h1>La</h1>
+                <div class="Zd">
+                    <p>57</p>
+                </div>
+                <div class="nome">
+                    <p>Lântanio</p>
+                </div>
+            </a>
+
+
+            <div class="info lanta">
+                <h1>Lântanio</h1> <br>
+                <h3>Z=57 <br> Período: 6 <br>Família: 3 </h3>
+            </div>
+            <a href="Elementos\89_ElementoActínio.html" class="elemento act Ac">
+                <h1>Ac</h1>
+                <div class="Zd">
+                    <p>89</p>
+                </div>
+                <div class="nome">
+                    <p>Actínio</p>
+                </div>
+            </a>
+
+
+            <div class="info act">
+                <h1>Actínio</h1> <br>
+                <h3>Z=89 <br> Período: 7 <br>Família: 3 </h3>
+            </div>
+
+            <a href="Elementos\22_ElementoTitânio.html" class="elemento transição Ti">
+                <h1>Ti</h1>
+                <div class="Zd">
+                    <p>22</p>
+                </div>
+                <div class="nome">
+                    <p>Titânio</p>
+                </div>
+            </a>
+
+
+
+            <div class="info transição">
+                <h1>Titânio</h1> <br>
+                <h3>Z=22 <br> Período: 4 <br>Família: 4 </h3>
+            </div>
+            <a href="Elementos\40_ElementoZircônio.html" class="elemento transição Zr">
+                <h1>Zr</h1>
+                <div class="Zd">
+                    <p>40</p>
+                </div>
+                <div class="nome">
+                    <p>Zircônio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Zircônio</h1> <br>
+                <h3>Z=40 <br> Período: 5 <br>Família: 4 </h3>
+            </div>
+            <a href="Elementos\72_ElementoHáfnio.html" class="elemento transição Hf">
+                <h1>Hf</h1>
+                <div class="Zd">
+                    <p>72</p>
+                </div>
+                <div class="nome">
+                    <p>Háfnio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Háfnio</h1> <br>
+                <h3>Z=72 <br> Período: 6 <br>Família: 4 </h3>
+            </div>
+            <a href="Elementos\104_ElementoRutherfórdio.html" class="elemento transição Rf">
+                <h1>Rf</h1>
+                <div class="Zt">
+                    <p>104</p>
+                </div>
+                <div class="nome grande">
+                    <p>Rutherfórdio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Rutherfórdio</h1> <br>
+                <h3>Z=104 <br> Período: 7 <br>Família: 4 </h3>
+            </div>
+
+            <a href="Elementos\23_ElementoVanádio.html" class="elemento transição V">
+                <h1>V</h1>
+                <div class="Zd">
+                    <p>23</p>
+                </div>
+                <div class="nome">
+                    <p>Vanádio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Vanádio</h1> <br>
+                <h3>Z=23 <br> Período: 4 <br>Família: 5 </h3>
+            </div>
+            <a href="Elementos\41_ElementoNióbio.html" class="elemento transição Nb">
+                <h1>Nb</h1>
+                <div class="Zd">
+                    <p>41</p>
+                </div>
+                <div class="nome">
+                    <p>Nióbio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Nióbio</h1> <br>
+                <h3>Z=41 <br> Período: 5 <br>Família: 5 </h3>
+            </div>
+            <a href="Elementos\73_ElementoTântalo.html" class="elemento transição Ta">
+                <h1>Ta</h1>
+                <div class="Zd">
+                    <p>73</p>
+                </div>
+                <div class="nome">
+                    <p>Tântalo</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Tântalo</h1> <br>
+                <h3>Z=73 <br> Período: 6 <br>Família: 5 </h3>
+            </div>
+            <a href="Elementos\105_ElementoDúbnio.html" class="elemento transição Db">
+                <h1>Db</h1>
+                <div class="Zt">
+                    <p>105</p>
+                </div>
+                <div class="nome">
+                    <p>Dúbnio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Dúbnio</h1> <br>
+                <h3>Z=105 <br> Período: 7 <br>Família: 5 </h3>
+            </div>
+
+            <a href="Elementos\24_ElementoCromo.html" class="elemento transição Cr">
+                <h1>Cr</h1>
+                <div class="Zd">
+                    <p>24</p>
+                </div>
+                <div class="nome">
+                    <p>Cromo</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Cromo</h1> <br>
+                <h3>Z=24 <br> Período: 4 <br>Família: 6 </h3>
+            </div>
+            <a href="Elementos\42_ElementoMolibdênio.html" class="elemento transição Mo">
+                <h1>Mo</h1>
+                <div class="Zd">
+                    <p>42</p>
+                </div>
+                <div class="nome">
+                    <p>Molibdênio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Molibdênio</h1> <br>
+                <h3>Z=42 <br> Período: 5 <br>Família: 6 </h3>
+            </div>
+            <a href="Elementos\74_ElementoTungstênio.html" class="elemento transição W">
+                <h1>W</h1>
+                <div class="Zd">
+                    <p>74</p>
+                </div>
+                <div class="nome">
+                    <p>Tungstênio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Tungstênio</h1> <br>
+                <h3>Z=74 <br> Período: 6 <br>Família: 6 </h3>
+            </div>
+            <a href="Elementos\106_ElementoSeabórgio.html" class="elemento transição Sg">
+                <h1>Sg</h1>
+                <div class="Zt">
+                    <p>106</p>
+                </div>
+                <div class="nome">
+                    <p>Seabórgio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Seabórgio</h1> <br>
+                <h3>Z=106 <br> Período: 7 <br>Família: 6 </h3>
+            </div>
+
+            <a href="Elementos\25_ElementoManganês.html" class="elemento transição Mn">
+                <h1>Mn</h1>
+                <div class="Zd">
+                    <p>25</p>
+                </div>
+                <div class="nome">
+                    <p>Manganês</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Manganês</h1> <br>
+                <h3>Z=25 <br> Período: 4 <br>Família: 7 </h3>
+            </div>
+            <a href="Elementos\43_ElementoTecnécio.html" class="elemento transição Tc">
+                <h1>Tc</h1>
+                <div class="Zd">
+                    <p>43</p>
+                </div>
+                <div class="nome">
+                    <p>Tecnécio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Tecnécio</h1> <br>
+                <h3>Z=43 <br> Período: 5 <br>Família: 7 </h3>
+            </div>
+            <a href="Elementos\75_ElementoRênio.html" class="elemento transição Re">
+                <h1>Re</h1>
+                <div class="Zd">
+                    <p>75</p>
+                </div>
+                <div class="nome">
+                    <p>Rênio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Rênio</h1> <br>
+                <h3>Z=75 <br> Período: 6 <br>Família: 7 </h3>
+            </div>
+            <a href="Elementos\107_ElementoBóhrio.html" class="elemento transição Bh">
+                <h1>Bh</h1>
+                <div class="Zt">
+                    <p>107</p>
+                </div>
+                <div class="nome">
+                    <p>Bóhrio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Bóhrio</h1> <br>
+                <h3>Z=107 <br> Período: 7 <br>Família: 7 </h3>
+            </div>
+
+            <a href="Elementos\26_ElementoFerro.html" class="elemento transição Fe">
+                <h1>Fe</h1>
+                <div class="Zd">
+                    <p>26</p>
+                </div>
+                <div class="nome">
+                    <p>Ferro</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Ferro</h1> <br>
+                <h3>Z=26 <br> Período: 4 <br>Família: 8 </h3>
+            </div>
+            <a href="Elementos\44_ElementoRutênio.html" class="elemento transição Ru">
+                <h1>Ru</h1>
+                <div class="Zd">
+                    <p>44</p>
+                </div>
+                <div class="nome">
+                    <p>Rutênio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Rutênio</h1> <br>
+                <h3>Z=44 <br> Período: 5 <br>Família: 8 </h3>
+            </div>
+            <a href="Elementos\76_ElementoÓsmio.html" class="elemento transição Os">
+                <h1>Os</h1>
+                <div class="Zd">
+                    <p>76</p>
+                </div>
+                <div class="nome">
+                    <p>Ósmio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Ósmio</h1> <br>
+                <h3>Z=76 <br> Período: 6 <br>Família: 8 </h3>
+            </div>
+            <a href="Elementos\108_ElementoHássio.html" class="elemento transição Hs">
+                <h1>Hs</h1>
+                <div class="Zt">
+                    <p>108</p>
+                </div>
+                <div class="nome">
+                    <p>Hássio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Hássio</h1> <br>
+                <h3>Z=108 <br> Período: 7 <br>Família: 8 </h3>
+            </div>
+
+            <a href="Elementos\27_ElementoCobalto.html" class="elemento transição Co">
+                <h1>Co</h1>
+                <div class="Zd">
+                    <p>27</p>
+                </div>
+                <div class="nome">
+                    <p>Cobalto</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Cobalto</h1> <br>
+                <h3>Z=27 <br> Período: 4 <br>Família: 9 </h3>
+            </div>
+            <a href="Elementos\45_ElementoRódio.html" class="elemento transição Rh">
+                <h1>Rh</h1>
+                <div class="Zd">
+                    <p>45</p>
+                </div>
+                <div class="nome">
+                    <p>Ródio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Ródio</h1> <br>
+                <h3>Z=45 <br> Período: 5 <br>Família: 9 </h3>
+            </div>
+            <a href="Elementos\77_ElementoIrídio.html" class="elemento transição Ir">
+                <h1>Ir</h1>
+                <div class="Zd">
+                    <p>77</p>
+                </div>
+                <div class="nome">
+                    <p>Irídio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Irídio</h1> <br>
+                <h3>Z=77 <br> Período: 6 <br>Família: 9 </h3>
+            </div>
+            <a href="Elementos\109_ElementoMeitnério.html" class="elemento transição Mt">
+                <h1>Mt</h1>
+                <div class="Zt">
+                    <p>109</p>
+                </div>
+                <div class="nome">
+                    <p>Meitnério</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Meitnério</h1> <br>
+                <h3>Z=109 <br> Período: 7 <br>Família: 9 </h3>
+            </div>
+
+            <a href="Elementos\28_ElementoNíquel.html" class="elemento transição Ni">
+                <h1>Ni</h1>
+                <div class="Zd">
+                    <p>28</p>
+                </div>
+                <div class="nome">
+                    <p>Níquel</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Níquel</h1> <br>
+                <h3>Z=28 <br> Período: 4 <br>Família: 10 </h3>
+            </div>
+            <a href="Elementos\46_ElementoPaládio.html" class="elemento transição Pd">
+                <h1>Pd</h1>
+                <div class="Zd">
+                    <p>46</p>
+                </div>
+                <div class="nome">
+                    <p>Paládio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Paládio</h1> <br>
+                <h3>Z=46 <br> Período: 5 <br>Família: 10 </h3>
+            </div>
+            <a href="Elementos\78_ElementoPlatina.html" class="elemento transição Pt">
+                <h1>Pt</h1>
+                <div class="Zd">
+                    <p>78</p>
+                </div>
+                <div class="nome">
+                    <p>Platina</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Platina</h1> <br>
+                <h3>Z=78 <br> Período: 6 <br>Família: 10 </h3>
+            </div>
+            <a href="Elementos\110_ElementoDarmstádio.html" class="elemento transição Ds">
+                <h1>Ds</h1>
+                <div class="Zt">
+                    <p>110</p>
+                </div>
+                <div class="nome">
+                    <p>Darmstádio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Darmstádio</h1> <br>
+                <h3>Z=110 <br> Período: 7 <br>Família: 10 </h3>
+            </div>
+
+            <a href="Elementos\29_ElementoCobre.html" class="elemento transição Cu">
+                <h1>Cu</h1>
+                <div class="Zd">
+                    <p>29</p>
+                </div>
+                <div class="nome">
+                    <p>Cobre</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Cobre</h1> <br>
+                <h3>Z=29 <br> Período: 4 <br>Família: 11 </h3>
+            </div>
+            <a href="Elementos\47_ElementoPrata.html" class="elemento transição Ag">
+                <h1>Ag</h1>
+                <div class="Zd">
+                    <p>47</p>
+                </div>
+                <div class="nome">
+                    <p>Prata</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Prata</h1> <br>
+                <h3>Z=47 <br> Período: 5 <br>Família: 11 </h3>
+            </div>
+            <a href="Elementos\79_ElementoOuro.html" class="elemento transição Au">
+                <h1>Au</h1>
+                <div class="Zd">
+                    <p>79</p>
+                </div>
+                <div class="nome">
+                    <p>Ouro</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Ouro</h1> <br>
+                <h3>Z=79 <br> Período: 6 <br>Família: 11 </h3>
+            </div>
+            <a href="Elementos\111_ElementoRoentgênio.html" class="elemento transição Rg">
+                <h1>Rg</h1>
+                <div class="Zt">
+                    <p>111</p>
+                </div>
+                <div class="nome">
+                    <p>Roentgênio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Roentgênio</h1> <br>
+                <h3>Z=111 <br> Período: 7 <br>Família: 11 </h3>
+            </div>
+
+            <a href="Elementos\30_ElementoZinco.html" class="elemento transição Zn">
+                <h1>Zn</h1>
+                <div class="Zd">
+                    <p>30</p>
+                </div>
+                <div class="nome">
+                    <p>Zinco</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Zinco</h1> <br>
+                <h3>Z=30 <br> Período: 4 <br>Família: 12 </h3>
+            </div>
+            <a href="Elementos\48_ElementoCádmio.html" class="elemento transição Cd">
+                <h1>Cd</h1>
+                <div class="Zd">
+                    <p>48</p>
+                </div>
+                <div class="nome">
+                    <p>Cádmio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Cádmio</h1> <br>
+                <h3>Z=48 <br> Período: 5 <br>Família: 12 </h3>
+            </div>
+            <a href="Elementos\80_ElementoMercúrio.html" class="elemento transição Hg">
+                <h1>Hg</h1>
+                <div class="Zd">
+                    <p>80</p>
+                </div>
+                <div class="nome">
+                    <p>Mercúrio</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Mercúrio</h1> <br>
+                <h3>Z=80 <br> Período: 6 <br>Família: 12 </h3>
+            </div>
+            <a href="Elementos\112_ElementoCopernício.html" class="elemento transição Cn">
+                <h1>Cn</h1>
+                <div class="Zt">
+                    <p>112</p>
+                </div>
+                <div class="nome">
+                    <p>Copernício</p>
+                </div>
+            </a>
+            <div class="info transição">
+                <h1>Copernício</h1> <br>
+                <h3>Z=112 <br> Período: 7 <br>Família: 12 </h3>
+            </div>
+
+            <a href="Elementos\5_ElementoBoro.html" class="elemento semi B">
+                <h1>B</h1>
+                <div class="Zu">
+                    <p>5</p>
+                </div>
+                <div class="nome">
+                    <p>Boro</p>
+                </div>
+            </a>
+            <div class="info semi">
+                <h1>Boro</h1> <br>
+                <h3>Z=5 <br> Período: 2 <br>Família: 13 </h3>
+            </div>
+            <a href="Elementos\13_ElementoAlumínio.html" class="elemento outros Al">
+                <h1>Al</h1>
+                <div class="Zd">
+                    <p>13</p>
+                </div>
+                <div class="nome">
+                    <p>Alumínio</p>
+                </div>
+            </a>
+            <div class="info outros">
+                <h1>Alumínio</h1> <br>
+                <h3>Z=13 <br> Período: 3 <br>Família: 13 </h3>
+            </div>
+            <a href="Elementos\31_ElementoGálio.html" class="elemento outros Ga">
+                <h1>Ga</h1>
+                <div class="Zd">
+                    <p>31</p>
+                </div>
+                <div class="nome">
+                    <p>Gálio</p>
+                </div>
+            </a>
+            <div class="info outros">
+                <h1>Gálio</h1> <br>
+                <h3>Z=31 <br> Período: 4 <br>Família: 13 </h3>
+            </div>
+            <a href="Elementos\49_ElementoÍndio.html" class="elemento outros In">
+                <h1>In</h1>
+                <div class="Zd">
+                    <p>49</p>
+                </div>
+                <div class="nome">
+                    <p>Índio</p>
+                </div>
+            </a>
+            <div class="info outros">
+                <h1>Índio</h1> <br>
+                <h3>Z=49 <br> Período: 5 <br>Família: 13 </h3>
+            </div>
+            <a href="Elementos\81_ElementoTálio.html" class="elemento outros Tl">
+                <h1>Tl</h1>
+                <div class="Zd">
+                    <p>81</p>
+                </div>
+                <div class="nome">
+                    <p>Tálio</p>
+                </div>
+            </a>
+            <div class="info outros">
+                <h1>Tálio</h1> <br>
+                <h3>Z=81 <br> Período: 6 <br>Família: 13 </h3>
+            </div>
+            <a href="Elementos\113_ElementoNihônio.html" class="elemento outros Nh">
+                <h1>Nh</h1>
+                <div class="Zt">
+                    <p>113</p>
+                </div>
+                <div class="nome">
+                    <p>Nihônio</p>
+                </div>
+            </a>
+            <div class="info outros">
+                <h1>Nihônio</h1> <br>
+                <h3>Z=113 <br> Período: 7 <br>Família: 13 </h3>
+            </div>
+
+            <a href="Elementos\6_ElementoCarbono.html" class="elemento ametal C">
+                <h1>C</h1>
+                <div class="Zu">
+                    <p>6</p>
+                </div>
+                <div class="nome">
+                    <p>Carbono</p>
+                </div>
+            </a>
+            <div class="info ametal">
+                <h1>Carbono</h1> <br>
+                <h3>Z=6 <br> Período: 2 <br>Família: 14 </h3>
+            </div>
+            <a href="Elementos\14_ElementoSilício.html" class="elemento semi Si">
+                <h1>Si</h1>
+                <div class="Zd">
+                    <p>14</p>
+                </div>
+                <div class="nome">
+                    <p>Silício</p>
+                </div>
+            </a>
+            <div class="info semi">
+                <h1>Silício</h1> <br>
+                <h3>Z=14 <br> Período: 3 <br>Família: 14 </h3>
+            </div>
+            <a href="Elementos\32_ElementoGermânio.html" class="elemento semi Ge">
+                <h1>Ge</h1>
+                <div class="Zd">
+                    <p>32</p>
+                </div>
+                <div class="nome">
+                    <p>Germânio</p>
+                </div>
+            </a>
+            <div class="info semi">
+                <h1>Germânio</h1> <br>
+                <h3>Z=32 <br> Período: 4 <br>Família: 14 </h3>
+            </div>
+            <a href="Elementos\50_ElementoEstanho.html" class="elemento outros Sn">
+                <h1>Sn</h1>
+                <div class="Zd">
+                    <p>50</p>
+                </div>
+                <div class="nome">
+                    <p>Estanho</p>
+                </div>
+            </a>
+            <div class="info outros">
+                <h1>Estanho</h1> <br>
+                <h3>Z=50 <br> Período: 5 <br>Família: 14 </h3>
+            </div>
+            <a href="Elementos\82_ElementoChumbo.html" class="elemento outros Pb">
+                <h1>Pb</h1>
+                <div class="Zd">
+                    <p>82</p>
+                </div>
+                <div class="nome">
+                    <p>Chumbo</p>
+                </div>
+            </a>
+            <div class="info outros">
+                <h1>Chumbo</h1> <br>
+                <h3>Z=82 <br> Período: 6 <br>Família: 14 </h3>
+            </div>
+            <a href="Elementos\114_ElementoFleróvio.html" class="elemento outros Fl">
+                <h1>Fl</h1>
+                <div class="Zt">
+                    <p>114</p>
+                </div>
+                <div class="nome">
+                    <p>Fleróvio</p>
+                </div>
+            </a>
+            <div class="info outros">
+                <h1>Fleróvio</h1> <br>
+                <h3>Z=114 <br> Período: 7 <br>Família: 14 </h3>
+            </div>
+
+            <a href="Elementos\7_ElementoNitrogênio.html" class="elemento ametal N">
+                <h1>N</h1>
+                <div class="Zu">
+                    <p>7</p>
+                </div>
+                <div class="nome">
+                    <p>Nitrogênio</p>
+                </div>
+            </a>
+            <div class="info ametal">
+                <h1>Nitrogênio</h1> <br>
+                <h3>Z=7 <br> Período: 2 <br>Família: 15 </h3>
+            </div>
+            <a href="Elementos\15_ElementoFósforo.html" class="elemento ametal P">
+                <h1>P</h1>
+                <div class="Zd">
+                    <p>15</p>
+                </div>
+                <div class="nome">
+                    <p>Fósforo</p>
+                </div>
+            </a>
+            <div class="info ametal">
+                <h1>Fósforo</h1> <br>
+                <h3>Z=15 <br> Período: 3 <br>Família: 15 </h3>
+            </div>
+            <a href="Elementos\33_ElementoArsênio.html" class="elemento semi As">
+                <h1>As</h1>
+                <div class="Zd">
+                    <p>33</p>
+                </div>
+                <div class="nome">
+                    <p>Arsênio</p>
+                </div>
+            </a>
+            <div class="info semi">
+                <h1>Arsênio</h1> <br>
+                <h3>Z=33 <br> Período: 4 <br>Família: 15 </h3>
+            </div>
+            <a href="Elementos\51_ElementoAntimônio.html" class="elemento semi Sb">
+                <h1>Sb</h1>
+                <div class="Zd">
+                    <p>51</p>
+                </div>
+                <div class="nome">
+                    <p>Antimônio</p>
+                </div>
+            </a>
+            <div class="info semi">
+                <h1>Antimônio</h1> <br>
+                <h3>Z=51 <br> Período: 5 <br>Família: 15 </h3>
+            </div>
+            <a href="Elementos\83_ElementoBismuto.html" class="elemento outros Bi">
+                <h1>Bi</h1>
+                <div class="Zd">
+                    <p>83</p>
+                </div>
+                <div class="nome">
+                    <p>Bismuto</p>
+                </div>
+            </a>
+            <div class="info outros">
+                <h1>Bismuto</h1> <br>
+                <h3>Z=83 <br> Período: 6 <br>Família: 15 </h3>
+            </div>
+            <a href="Elementos\115_ElementoMoscóvio.html" class="elemento outros Mc">
+                <h1>Mc</h1>
+                <div class="Zt">
+                    <p>115</p>
+                </div>
+                <div class="nome">
+                    <p>Moscóvio</p>
+                </div>
+            </a>
+            <div class="info outros">
+                <h1>Moscóvio</h1> <br>
+                <h3>Z=115 <br> Período: 7 <br>Família: 15 </h3>
+            </div>
+
+            <a href="Elementos\8_ElementoOxigênio.html" class="elemento ametal O">
+                <h1>O</h1>
+                <div class="Zu">
+                    <p>8</p>
+                </div>
+                <div class="nome">
+                    <p>Oxigênio</p>
+                </div>
+            </a>
+            <div class="info ametal">
+                <h1>Oxigênio</h1> <br>
+                <h3>Z=8 <br> Período: 2 <br>Família: 16 </h3>
+            </div>
+            <a href="Elementos\16_ElementoEnxofre.html" class="elemento ametal S">
+                <h1>S</h1>
+                <div class="Zd">
+                    <p>16</p>
+                </div>
+                <div class="nome">
+                    <p>Enxofre</p>
+                </div>
+            </a>
+            <div class="info ametal">
+                <h1>Enxofre</h1> <br>
+                <h3>Z=16 <br> Período: 3 <br>Família: 16 </h3>
+            </div>
+            <a href="Elementos\34_ElementoSelênio.html" class="elemento ametal Se">
+                <h1>Se</h1>
+                <div class="Zd">
+                    <p>34</p>
+                </div>
+                <div class="nome">
+                    <p>Selênio</p>
+                </div>
+            </a>
+            <div class="info ametal">
+                <h1>Selênio</h1> <br>
+                <h3>Z=34 <br> Período: 4 <br>Família: 16 </h3>
+            </div>
+            <a href="Elementos\52_ElementoTelúrio.html" class="elemento semi Te">
+                <h1>Te</h1>
+                <div class="Zd">
+                    <p>52</p>
+                </div>
+                <div class="nome">
+                    <p>Telúrio</p>
+                </div>
+            </a>
+            <div class="info semi">
+                <h1>Telúrio</h1> <br>
+                <h3>Z=52 <br> Período: 5 <br>Família: 16 </h3>
+            </div>
+            <a href="Elementos\84_ElementoPolônio.html" class="elemento semi Po">
+                <h1>Po</h1>
+                <div class="Zd">
+                    <p>84</p>
+                </div>
+                <div class="nome">
+                    <p>Polônio</p>
+                </div>
+            </a>
+            <div class="info semi">
+                <h1>Polônio</h1> <br>
+                <h3>Z=84 <br> Período: 6 <br>Família: 16 </h3>
+            </div>
+            <a href="Elementos\116_ElementoLivermório.html" class="elemento outros Lv">
+                <h1>Lv</h1>
+                <div class="Zt">
+                    <p>116</p>
+                </div>
+                <div class="nome">
+                    <p>Livermório</p>
+                </div>
+            </a>
+            <div class="info outros">
+                <h1>Livermório</h1> <br>
+                <h3>Z=116 <br> Período: 7 <br>Família: 16 </h3>
+            </div>
+
+            <a href="Elementos\9_ElementoFlúor.html" class="elemento halo F">
+                <h1>F</h1>
+                <div class="Zu">
+                    <p>9</p>
+                </div>
+                <div class="nome">
+                    <p>Flúor</p>
+                </div>
+            </a>
+            <div class="info halo">
+                <h1>Flúor</h1> <br>
+                <h3>Z=9 <br> Período: 2 <br>Família: 17 </h3>
+            </div>
+            <a href="Elementos\17_ElementoCloro.html" class="elemento halo Cl">
+                <h1>Cl</h1>
+                <div class="Zd">
+                    <p>17</p>
+                </div>
+                <div class="nome">
+                    <p>Cloro</p>
+                </div>
+            </a>
+            <div class="info halo">
+                <h1>Cloro</h1> <br>
+                <h3>Z=17 <br> Período: 3 <br>Família: 17 </h3>
+            </div>
+            <a href="Elementos\35_ElementoBromo.html" class="elemento halo Br">
+                <h1>Br</h1>
+                <div class="Zd">
+                    <p>35</p>
+                </div>
+                <div class="nome">
+                    <p>Bromo</p>
+                </div>
+            </a>
+            <div class="info halo">
+                <h1>Bromo</h1> <br>
+                <h3>Z=35 <br> Período: 4 <br>Família: 17 </h3>
+            </div>
+            <a href="Elementos\53_ElementoIodo.html" class="elemento halo I">
+                <h1>I</h1>
+                <div class="Zd">
+                    <p>53</p>
+                </div>
+                <div class="nome">
+                    <p>Iodo</p>
+                </div>
+            </a>
+            <div class="info halo">
+                <h1>Iodo</h1> <br>
+                <h3>Z=53 <br> Período: 5 <br>Família: 17 </h3>
+            </div>
+            <a href="Elementos\85_ElementoÁstato.html" class="elemento halo At">
+                <h1>At</h1>
+                <div class="Zd">
+                    <p>85</p>
+                </div>
+                <div class="nome">
+                    <p>Ástato</p>
+                </div>
+            </a>
+            <div class="info halo">
+                <h1>Ástato</h1> <br>
+                <h3>Z=85 <br> Período: 6 <br>Família: 17 </h3>
+            </div>
+            <a href="Elementos\117_ElementoTenessino.html" class="elemento halo Ts">
+                <h1>Ts</h1>
+                <div class="Zt">
+                    <p>117</p>
+                </div>
+                <div class="nome">
+                    <p>Tenessino</p>
+                </div>
+            </a>
+            <div class="info halo">
+                <h1>Tenessino</h1> <br>
+                <h3>Z=117 <br> Período: 7 <br>Família: 17 </h3>
+            </div>
+
+            <a href="Elementos\2_ElementoHélio.html" class="elemento nobre He">
+                <h1>He</h1>
+                <div class="Zu">
+                    <p>2</p>
+                </div>
+                <div class="nome">
+                    <p>Hélio</p>
+                </div>
+            </a>
+            <div class="info nobre">
+                <h1>Hélio</h1> <br>
+                <h3>Z=2 <br> Período: 1 <br>Família: 18 </h3>
+            </div>
+            <a href="Elementos\10_ElementoNeônio.html" class="elemento nobre Ne">
+                <h1>Ne</h1>
+                <div class="Zd">
+                    <p>10</p>
+                </div>
+                <div class="nome">
+                    <p>Neônio</p>
+                </div>
+            </a>
+            <div class="info nobre">
+                <h1>Neônio</h1> <br>
+                <h3>Z=10 <br> Período: 2 <br>Família: 18 </h3>
+            </div>
+            <a href="Elementos\18_ElementoArgônio.html" class="elemento nobre Ar">
+                <h1>Ar</h1>
+                <div class="Zd">
+                    <p>18</p>
+                </div>
+                <div class="nome">
+                    <p>Argônio</p>
+                </div>
+            </a>
+            <div class="info nobre">
+                <h1>Argônio</h1> <br>
+                <h3>Z=18 <br> Período: 3 <br>Família: 18 </h3>
+            </div>
+            <a href="Elementos\36_ElementoCriptônio.html" class="elemento nobre Kr">
+                <h1>Kr</h1>
+                <div class="Zd">
+                    <p>36</p>
+                </div>
+                <div class="nome">
+                    <p>Criptônio</p>
+                </div>
+            </a>
+            <div class="info nobre">
+                <h1>Criptônio</h1> <br>
+                <h3>Z=36 <br> Período: 4 <br>Família: 18 </h3>
+            </div>
+            <a href="Elementos\54_ElementoXenônio.html" class="elemento nobre Xe">
+                <h1>Xe</h1>
+                <div class="Zd">
+                    <p>54</p>
+                </div>
+                <div class="nome">
+                    <p>Xenônio</p>
+                </div>
+            </a>
+            <div class="info nobre">
+                <h1>Xenônio</h1> <br>
+                <h3>Z=54 <br> Período: 5 <br>Família: 18 </h3>
+            </div>
+            <a href="Elementos\86_ElementoRadônio.html" class="elemento nobre Rn">
+                <h1>Rn</h1>
+                <div class="Zd">
+                    <p>86</p>
+                </div>
+                <div class="nome">
+                    <p>Radônio</p>
+                </div>
+            </a>
+            <div class="info nobre">
+                <h1>Radônio</h1> <br>
+                <h3>Z=86 <br> Período: 6 <br>Família: 18 </h3>
+            </div>
+            <a href="Elementos\118_ElementoOganessônio.html" class="elemento nobre Og">
+                <h1>Og</h1>
+                <div class="Zt">
+                    <p>118</p>
+                </div>
+                <div class="nome grande">
+                    <p>Oganessônio</p>
+                </div>
+            </a>
+            <div class="info nobre">
+                <h1>Oganessônio</h1> <br>
+                <h3>Z=118 <br> Período: 7 <br>Família: 18 </h3>
+            </div>
+
         </div>
-        <div class="Chancourtois">
-            <h2 class="h"> Alexandre-Emile B. de Chancourtois: Parafuso Telúrico </h2>
-            <p>
-                Alexandre-Emile B. de Chancourtois (1820-1886) organizou 16 elementos com o modelo conhecido como “Parafuso
-                Telúrico”, onde as informações eram distribuídas na base, em um formato cilíndrico, colocando os elementos
-                com propriedades semelhantes alinhados verticalmente. Os elementos era organizados por ordem crescente de
-                sua massa atômica.
-            </p>
-            <img src="img/parafuso.jpg">
+
+        <div class="tabela2">
+
+            <a href="Elementos\58_ElementoCério.html" class="elemento lanta Ce">
+                <h1>Ce</h1>
+                <div class="Zd">
+                    <p>58</p>
+                </div>
+                <div class="nome">
+                    <p>Cério</p>
+                </div>
+            </a>
+            <div class="info2 lanta">
+                <h1>Cério</h1> <br>
+                <h3>Z=58 <br> Período: 6 <br>Família: 3 </h3>
+            </div>
+            <a href="Elementos\90_ElementoTório.html" class="elemento act Th">
+                <h1>Th</h1>
+                <div class="Zd">
+                    <p>90</p>
+                </div>
+                <div class="nome">
+                    <p>Tório</p>
+                </div>
+            </a>
+            <div class="info2 act">
+                <h1>Tório</h1> <br>
+                <h3>Z=90 <br> Período: 7 <br>Família: 3 </h3>
+            </div>
+
+            <a href="Elementos\59_ElementoPraseodímio.html" class="elemento lanta Pr">
+                <h1>Pr</h1>
+                <div class="Zd">
+                    <p>59</p>
+                </div>
+                <div class="nome grande">
+                    <p>Praseodímio</p>
+                </div>
+            </a>
+            <div class="info2 lanta">
+                <h1>Praseodímio</h1> <br>
+                <h3>Z=59 <br> Período: 6 <br>Família: 3 </h3>
+            </div>
+            <a href="Elementos\91_ElementoProtactínio.html" class="elemento act Pa">
+                <h1>Pa</h1>
+                <div class="Zd">
+                    <p>91</p>
+                </div>
+                <div class="nome">
+                    <p>Protactínio</p>
+                </div>
+            </a>
+            <div class="info2 act">
+                <h1>Protactínio</h1> <br>
+                <h3>Z=91 <br> Período: 7 <br>Família: 3 </h3>
+            </div>
+
+            <a href="Elementos\60_ElementoNeodímio.html" class="elemento lanta Nd">
+                <h1>Nd</h1>
+                <div class="Zd">
+                    <p>60</p>
+                </div>
+                <div class="nome">
+                    <p>Neodímio</p>
+                </div>
+            </a>
+            <div class="info2 lanta">
+                <h1>Neodímio</h1> <br>
+                <h3>Z=60 <br> Período: 6 <br>Família: 3 </h3>
+            </div>
+            <a href="Elementos\92_ElementoUrânio.html" class="elemento act U">
+                <h1>U</h1>
+                <div class="Zd">
+                    <p>92</p>
+                </div>
+                <div class="nome">
+                    <p>Urânio</p>
+                </div>
+            </a>
+            <div class="info2 act">
+                <h1>Urânio</h1> <br>
+                <h3>Z=92 <br> Período: 7 <br>Família: 3 </h3>
+            </div>
+
+            <a href="Elementos\61_ElementoPromécio.html" class="elemento lanta Pm">
+                <h1>Pm</h1>
+                <div class="Zd">
+                    <p>61</p>
+                </div>
+                <div class="nome">
+                    <p>Promécio</p>
+                </div>
+            </a>
+            <div class="info2 lanta">
+                <h1>Promécio</h1> <br>
+                <h3>Z=61 <br> Período: 6 <br>Família: 3 </h3>
+            </div>
+            <a href="Elementos\93_ElementoNetúnio.html" class="elemento act Np">
+                <h1>Np</h1>
+                <div class="Zd">
+                    <p>93</p>
+                </div>
+                <div class="nome">
+                    <p>Netúnio</p>
+                </div>
+            </a>
+            <div class="info2 act">
+                <h1>Netúnio</h1> <br>
+                <h3>Z=93 <br> Período: 7 <br>Família: 3 </h3>
+            </div>
+
+            <a href="Elementos\62_ElementoSamário.html" class="elemento lanta Sm">
+                <h1>Sm</h1>
+                <div class="Zd">
+                    <p>62</p>
+                </div>
+                <div class="nome">
+                    <p>Samário</p>
+                </div>
+            </a>
+            <div class="info2 lanta">
+                <h1>Samário</h1> <br>
+                <h3>Z=62 <br> Período: 6 <br>Família: 3 </h3>
+            </div>
+            <a href="Elementos\94_ElementoPlutônio.html" class="elemento act Pu">
+                <h1>Pu</h1>
+                <div class="Zd">
+                    <p>94</p>
+                </div>
+                <div class="nome">
+                    <p>Plutônio</p>
+                </div>
+            </a>
+            <div class="info2 act">
+                <h1>Plutônio</h1> <br>
+                <h3>Z=94 <br> Período: 7 <br>Família: 3 </h3>
+            </div>
+
+            <a href="Elementos\63_ElementoEurópio.html" class="elemento lanta Eu">
+                <h1>Eu</h1>
+                <div class="Zd">
+                    <p>63</p>
+                </div>
+                <div class="nome">
+                    <p>Európio</p>
+                </div>
+            </a>
+            <div class="info2 lanta">
+                <h1>Európio</h1> <br>
+                <h3>Z=63 <br> Período: 6 <br>Família: 3 </h3>
+            </div>
+            <a href="Elementos\95_ElementoAmerício.html" class="elemento act Am">
+                <h1>Am</h1>
+                <div class="Zd">
+                    <p>95</p>
+                </div>
+                <div class="nome">
+                    <p>Amerício</p>
+                </div>
+            </a>
+            <div class="info2 act">
+                <h1>Amerício</h1> <br>
+                <h3>Z=95 <br> Período: 7 <br>Família: 3 </h3>
+            </div>
+
+            <a href="Elementos\64_ElementoGadolínio.html" class="elemento lanta Gd">
+                <h1>Gd</h1>
+                <div class="Zd">
+                    <p>64</p>
+                </div>
+                <div class="nome">
+                    <p>Gadolínio</p>
+                </div>
+            </a>
+            <div class="info2 lanta">
+                <h1>Gadolínio</h1> <br>
+                <h3>Z=64 <br> Período: 6 <br>Família: 3 </h3>
+            </div>
+            <a href="Elementos\96_ElementoCúrio.html" class="elemento act Cm">
+                <h1>Cm</h1>
+                <div class="Zd">
+                    <p>96</p>
+                </div>
+                <div class="nome">
+                    <p>Cúrio</p>
+                </div>
+            </a>
+            <div class="info2 act">
+                <h1>Cúrio</h1> <br>
+                <h3>Z=96 <br> Período: 7 <br>Família: 3 </h3>
+            </div>
+
+            <a href="Elementos\65_ElementoTérbio.html" class="elemento lanta Tb">
+                <h1>Tb</h1>
+                <div class="Zd">
+                    <p>65</p>
+                </div>
+                <div class="nome">
+                    <p>Térbio</p>
+                </div>
+            </a>
+            <div class="info2 lanta">
+                <h1>Térbio</h1> <br>
+                <h3>Z=65 <br> Período: 6 <br>Família: 3 </h3>
+            </div>
+            <a href="Elementos\97_ElementoBerquélio.html" class="elemento act Bk">
+                <h1>Bk</h1>
+                <div class="Zd">
+                    <p>97</p>
+                </div>
+                <div class="nome">
+                    <p>Berquélio</p>
+                </div>
+            </a>
+            <div class="info2 act">
+                <h1>Berquélio</h1> <br>
+                <h3>Z=97 <br> Período: 7 <br>Família: 3 </h3>
+            </div>
+
+            <a href="Elementos\66_ElementoDisprósio.html" class="elemento lanta Dy">
+                <h1>Dy</h1>
+                <div class="Zd">
+                    <p>66</p>
+                </div>
+                <div class="nome">
+                    <p>Disprósio</p>
+                </div>
+            </a>
+            <div class="info2 lanta">
+                <h1>Disprósio</h1> <br>
+                <h3>Z=66 <br> Período: 6 <br>Família: 3 </h3>
+            </div>
+            <a href="Elementos\98_ElementoCalifórnio.html" class="elemento act Cf">
+                <h1>Cf</h1>
+                <div class="Zd">
+                    <p>98</p>
+                </div>
+                <div class="nome">
+                    <p>Califórnio</p>
+                </div>
+            </a>
+            <div class="info2 act">
+                <h1>Califórnio</h1> <br>
+                <h3>Z=98 <br> Período: 7 <br>Família: 3 </h3>
+            </div>
+
+            <a href="Elementos\67_ElementoHólmio.html" class="elemento lanta Ho">
+                <h1>Ho</h1>
+                <div class="Zd">
+                    <p>67</p>
+                </div>
+                <div class="nome">
+                    <p>Hólmio</p>
+                </div>
+            </a>
+            <div class="info2 lanta">
+                <h1>Hólmio</h1> <br>
+                <h3>Z=67 <br> Período: 6 <br>Família: 3 </h3>
+            </div>
+            <a href="Elementos\99_ElementoEinstênio.html" class="elemento act Es">
+                <h1>Es</h1>
+                <div class="Zd">
+                    <p>99</p>
+                </div>
+                <div class="nome">
+                    <p>Einstênio</p>
+                </div>
+            </a>
+            <div class="info2 act">
+                <h1>Einstênio</h1> <br>
+                <h3>Z=99 <br> Período: 7 <br>Família: 3 </h3>
+            </div>
+
+            <a href="Elementos\68_ElementoÉrbio.html" class="elemento lanta Er">
+                <h1>Er</h1>
+                <div class="Zd">
+                    <p>68</p>
+                </div>
+                <div class="nome">
+                    <p>Érbio</p>
+                </div>
+            </a>
+            <div class="info2 lanta">
+                <h1>Érbio</h1> <br>
+                <h3>Z=68 <br> Período: 6 <br>Família: 3 </h3>
+            </div>
+            <a href="Elementos\100_ElementoFérmio.html" class="elemento act Fm">
+                <h1>Fm</h1>
+                <div class="Zt">
+                    <p>100</p>
+                </div>
+                <div class="nome">
+                    <p>Férmio</p>
+                </div>
+            </a>
+            <div class="info2 act">
+                <h1>Férmio</h1> <br>
+                <h3>Z=100 <br> Período: 7 <br>Família: 3 </h3>
+            </div>
+
+            <a href="Elementos\69_ElementoTúlio.html" class="elemento lanta Tm">
+                <h1>Tm</h1>
+                <div class="Zd">
+                    <p>69</p>
+                </div>
+                <div class="nome">
+                    <p>Túlio</p>
+                </div>
+            </a>
+            <div class="info2 lanta">
+                <h1>Túlio</h1> <br>
+                <h3>Z=69 <br> Período: 6 <br>Família: 3 </h3>
+            </div>
+            <a href="Elementos\101_ElementoMendelévio.html" class="elemento act Md">
+                <h1>Md</h1>
+                <div class="Zt">
+                    <p>101</p>
+                </div>
+                <div class="nome">
+                    <p>Mendelévio</p>
+                </div>
+            </a>
+            <div class="info2 act">
+                <h1>Mendelévio</h1> <br>
+                <h3>Z=101 <br> Período: 7 <br>Família: 3 </h3>
+            </div>
+
+            <a href="Elementos\70_ElementoItérbio.html" class="elemento lanta Yb">
+                <h1>Yb</h1>
+                <div class="Zd">
+                    <p>70</p>
+                </div>
+                <div class="nome">
+                    <p>Itérbio</p>
+                </div>
+            </a>
+            <div class="info2 lanta">
+                <h1>Itérbio</h1> <br>
+                <h3>Z=70 <br> Período: 6 <br>Família: 3 </h3>
+            </div>
+            <a href="Elementos\102_ElementoNobélio.html" class="elemento act No">
+                <h1>No</h1>
+                <div class="Zt">
+                    <p>102</p>
+                </div>
+                <div class="nome">
+                    <p>Nobélio</p>
+                </div>
+            </a>
+            <div class="info2 act">
+                <h1>Nobélio</h1> <br>
+                <h3>Z=102 <br> Período: 7 <br>Família: 3 </h3>
+            </div>
+
+            <a href="Elementos\71_ElementoLutécio.html" class="elemento lanta Lu">
+                <h1>Lu</h1>
+                <div class="Zd">
+                    <p>71</p>
+                </div>
+                <div class="nome">
+                    <p>Lutécio</p>
+                </div>
+            </a>
+            <div class="info2 lanta">
+                <h1>Lutécio</h1> <br>
+                <h3>Z=71 <br> Período: 6 <br>Família: 3 </h3>
+            </div>
+            <a href="Elementos\103_ElementoLaurêncio.html" class="elemento act Lr">
+                <h1>Lr</h1>
+                <div class="Zt">
+                    <p>103</p>
+                </div>
+                <div class="nome">
+                    <p>Laurêncio</p>
+                </div>
+            </a>
+            <div class="info2 act">
+                <h1>Laurêncio</h1> <br>
+                <h3>Z=103 <br> Período: 7 <br>Família: 3 </h3>
+            </div>
+
         </div>
-        <div class="Newlands">
-            <h2 class="h"> John Newlands: Lei das Oitavas </h2>
-            <p>
-                John Newlands (1837-1898) também propôs um tipo de organização, que fio conhecido como “Lei das Oitavas”.
-                Além de químico, Newlands também era músico, o que o levou a organizar os 61 elementos até então conhecidos
-                de acordo com as notas musicais. Na sua organização, os elementos eram posicionados em colunas verticais de
-                7 elementos cada. Porém, esse também era um método restrito, já que ia até o cálcio.
-                <br>
-                Sua ideia foi alvo de piadas no mundo da química, sua teoria trouxe importantes descobertas: Quando os
-                elementos são organizados por ordem crescente de massa atômica, as propriedades começavam a se repetir a
-                cada oito elementos. Dessa forma, o primeiro elemento de uma oitava apresentava semelhanças com as
-                propriedades do primeiro elemento da outra oitava.
-            </p>
-            <img src="img/oitavas.jpg">
+
+        <div class="legenda">
+
+            <div class="ametais"></div>
+            <h4 class="legenda_texto">Não metais</h4>
+
+            <div class="alcalinos"></div>
+            <h4 class="legenda_texto">Metais Alcalinos</h4>
+
+            <div class="terrosos"></div>
+            <h4 class="legenda_texto">Alcalinos Terrosos</h4>
+
+            <div class="metais"></div>
+            <h4 class="legenda_texto">Metais de transição</h4>
+
+            <div class="nobres"></div>
+            <h4 class="legenda_texto">Gases Nobres</h4>
+
+            <div class="halos"></div>
+            <h4 class="legenda_texto">Gases Halogênios</h4>
+
+            <div class="semimetais"></div>
+            <h4 class="legenda_texto">Semimetais</h4>
+
+            <div class="outro"></div>
+            <h4 class="legenda_texto">Outros Metais</h4>
+
+            <div class="lantas"></div>
+            <h4 class="legenda_texto">Lantanídeos</h4>
+
+            <div class="acts"></div>
+            <h4 class="legenda_texto">Actinídios</h4>
+
         </div>
-        <div class="Mendeleiev">
-            <h2 class="h"> Dmitri Mendeleiev: Tabela periódica de Mendeleev </h2>
-            <p>
-                Em 1869, Dmitri Mendeleiev (1834-1907) resolveu organizar fichas com as propriedades de cada elemento em
-                ordem crescente de massa atômica. Ele também distribuiu as fichas em colunas verticais e linhas horizontais,
-                tomando as características e semelhanças de cada elemento como base. Mendeleieve também deixou alguns
-                espaços vazios, prevendo novos elementos com base no que havia percebido. Sua organização foi a mais
-                completa até então. Mesmo não se sabendo nada sobre os átomos, esse foi um trabalho fundamental para a
-                criação da tabela como a conhecemos hoje.
-            </p>
-            <img src="img/mendeleiev.jpg">
-        </div>
-        <div class="Mendeleiev">
-            <h2 class="h"> Henry Moseley: Tabela periódica atual </h2>
-            <p>
-                Henry Moseley (1887-1915) descobriu coisas importantes no ano de 1913. Ele estabeleceu o conceito de número
-                atômico, desenvolvendo estudos com o intuito de explicar a estrutura dos átomos. Moseley reorganizou a
-                tabela de Mendeleiev usando os números atômicos no lugar da massa, concertando algumas falhas anteriores.
-                Moseley posicionou os elementos de mesmas características químicas nas mesmas colunas verticais, além de
-                definir o conceito da periodicidade:
-                <br>
-                “Muitas propriedades físicas e químicas dos elementos variam periodicamente na sequência dos números
-                atômicos.”
-            </p>
-        </div>
-    </div>
+
     </div>
 </body>
 
