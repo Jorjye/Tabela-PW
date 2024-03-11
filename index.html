@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+     
+        var link = 'negado.html';
+        var si = 'index.html'
+        
+        function Link(url) {
+                window.location.href = url;
+        }
+
+            if(!localStorage.getItem('LinkAberto')){           
+
+                var senha = prompt("Escreva a senha: ");
+                
+                if(senha==881 || senha=='senha'){
+          
+                    alert("Senha correta! Bem vindo a Tabela");
+                    Link(si);
+
+                }else{
+
+                    Link(link);
+
+                }
+            }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
