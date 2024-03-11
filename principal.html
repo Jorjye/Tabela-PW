@@ -5,39 +5,7 @@
     <link rel="stylesheet" href="Principal.css">
     <meta charset="utf-8">
     <title>Tabela Periódica</title>
-    <script>
-        var link = 'negado.html';
-        var si = 'index.html';
-    
-        function Link(url) {
-            window.location.href = url;
-        }
-    
-        function OneTime(url) {
-            // Verifica se já ocorreu o redirecionamento
-            if (localStorage.getItem('Redirecionado') === 'true') {
-                return; // Encerra a função se já houve redirecionamento
-            }
-    
-            var senha = prompt("Escreva a senha: ");
-            if (senha == 881 || senha == 'senha') {
-                localStorage.setItem('LinkAberto', 'true');
-                localStorage.setItem('DataUltimaSenha', new Date().toLocaleDateString());
-                localStorage.setItem('Redirecionado', 'true');
-                alert("Senha correta! Bem-vindo à Tabela");
-                if (window.location.href !== url) {
-                    Link(url); // Redireciona apenas se o URL de destino for diferente do URL atual
-                }
-            } else {
-                Link(link); // Redireciona imediatamente se a senha estiver incorreta
-            }
-        }
-    
-        // Chama a função apenas quando a página é carregada
-        window.onload = function() {
-            OneTime(si);
-        };
-    </script>
+    <script></script>
 </head>
 
 <body>
