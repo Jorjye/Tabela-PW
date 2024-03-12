@@ -21,6 +21,17 @@ body {
 
 }
 
+#tudo-d {
+
+    background-image: url(img/back.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    cursor: default;
+
+}
+
 h1 {
 
     font-size: 25px;
@@ -97,6 +108,7 @@ div.tabela2 {
     color: black;
     padding-left: 5%;
     border-radius: 5% 20%;
+    line-height: 130%;
 
 }
 
@@ -114,11 +126,13 @@ div.tabela2 {
     line-height: 100%;
     padding-left: 2%;
     border-radius: 5% 20%;
+    line-height: 130%;
 
 }
 
 .elemento {
 
+    box-shadow: inset 0px 0px 5px black;
     border-radius: 5%;
     transition: 0.4;
     position: relative;
@@ -177,7 +191,7 @@ div.tabela2 {
 
     background-color: rgb(16, 109, 57);
     z-index: 10;
-    box-shadow:  0px 0px 12px 4px rgb(6, 99, 47);
+    box-shadow:  0px 0px 12px 4px rgb(6, 99, 47), inset 0px 0px 8px black;
 
 }
 
@@ -192,7 +206,7 @@ div.tabela2 {
 
     background-color: rgb(225, 110, 0);
     z-index: 10;
-    box-shadow: 0px 0px 12px 4px rgb(215, 100, 0);
+    box-shadow: 0px 0px 12px 4px rgb(215, 100, 0), inset 0px 0px 8px black;
 
 }
 
@@ -207,7 +221,7 @@ div.tabela2 {
 
     background-color: rgb(235, 185, 0);
     z-index: 10;
-    box-shadow: 0px 0px 12px 4px rgb(225, 175, 0);
+    box-shadow: 0px 0px 12px 4px rgb(225, 175, 0), inset 0px 0px 8px black;
 
 }
 
@@ -222,7 +236,7 @@ div.tabela2 {
 
     background-color: rgb(98, 10, 10);
     z-index: 10;
-    box-shadow: 0px 0px 12px 4px rgb(88, 0, 0);
+    box-shadow: 0px 0px 12px 4px rgb(88, 0, 0), inset 0px 0px 8px black;
 
 }
 
@@ -237,7 +251,7 @@ div.tabela2 {
 
     background-color: rgb(72, 21, 123);
     z-index: 10;
-    box-shadow: 0px 0px 12px 4px rgb(62, 11, 113);
+    box-shadow: 0px 0px 12px 4px rgb(62, 11, 113), inset 0px 0px 8px black;
 
 }
 
@@ -252,7 +266,7 @@ div.tabela2 {
 
     background-color: rgb(35, 75, 195);
     z-index: 10;
-    box-shadow: 0px 0px 12px 4px rgb(25, 65, 185);
+    box-shadow: 0px 0px 12px 4px rgb(25, 65, 185), inset 0px 0px 8px black;
 
 }
 
@@ -267,7 +281,7 @@ div.tabela2 {
 
     background-color: rgb(0, 98, 98);
     z-index: 10;
-    box-shadow: 0px 0px 12px 4px rgb(0, 88, 88);
+    box-shadow: 0px 0px 12px 4px rgb(0, 88, 88), inset 0px 0px 8px black;
 
 }
 
@@ -282,7 +296,7 @@ div.tabela2 {
 
     background-color: rgb(0, 114, 225);
     z-index: 10;
-    box-shadow: 0px 0px 12px 4px rgb(0, 104, 215);
+    box-shadow: 0px 0px 12px 4px rgb(0, 104, 215), inset 0px 0px 8px black;
 
 }
 
@@ -297,7 +311,7 @@ div.tabela2 {
 
     background-color: rgb(72, 175, 140);
     z-index: 10;
-    box-shadow: 0px 0px 12px 4px rgb(62, 165, 130);
+    box-shadow: 0px 0px 12px 4px rgb(62, 165, 130), inset 0px 0px 8px black;
 
 }
 
@@ -312,7 +326,7 @@ div.tabela2 {
 
     background-color: rgb(191, 130, 191);
     z-index: 10;
-    box-shadow: 0px 0px 12px 4px rgb(181, 120, 181);
+    box-shadow: 0px 0px 12px 4px rgb(181, 120, 181), inset 0px 0px 8px black;
 
 }
 
@@ -484,6 +498,12 @@ input[type="checkbox"]:checked~#tudo {
 
 }
 
+input[type="checkbox"]:checked~#tudo-d {
+
+    filter: invert(1);
+
+}
+
 input[type="checkbox"]:checked~#tudo header {
 
     filter: invert(1);
@@ -491,13 +511,33 @@ input[type="checkbox"]:checked~#tudo header {
 
 }
 
+input[type="checkbox"]:checked~#tudo-d header {
+
+    filter: invert(1);
+    background-color: rgb(70, 70, 70);
+
+}
+
+
 input[type="checkbox"]:checked~#tudo header nav ul .menu {
 
     filter: invert(1);
 
 }
 
+input[type="checkbox"]:checked~#tudo-d header nav ul .menu {
+
+    filter: invert(1);
+
+}
+
 input[type="checkbox"]:checked~#tudo header nav ul .menu:hover {
+
+    background-color: rgb(215, 215, 215);
+
+}
+
+input[type="checkbox"]:checked~#tudo-d header nav ul .menu:hover {
 
     background-color: rgb(215, 215, 215);
 
