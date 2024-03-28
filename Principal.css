@@ -38,12 +38,21 @@ h1 {
 
 }
 
-h2 {
+h2#escuro-t {
 
     position: absolute;
-    top: -2%;
-    right: 3%;
-    z-index: 10;
+    top: -15px;
+    right: 50px;
+    z-index: 30;
+
+}
+
+h2#vidro-t {
+
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    z-index: 30;
 
 }
 
@@ -482,36 +491,47 @@ a {
 
 }
 
-input[type="checkbox"] {
+input[type="checkbox"]#escuro {
 
     position: absolute;
     z-index: 10;
-    top: 0.75%;
-    right: 1%;
+    top: 10px;
+    right: 20px;
     transform: scale(1.8);
 
 }
 
-input[type="checkbox"]:checked~#tudo {
+input[type="checkbox"]#vidro {
+
+    position: absolute;
+    z-index: 10;
+    top: 45px;
+    right: 20px;
+    transform: scale(1.8);
+
+}
+
+input#escuro:checked~#tudo {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo-d {
+input#escuro:checked~#tudo-d {
 
     filter: invert(1);
+    background-image: url();
 
 }
 
-input[type="checkbox"]:checked~#tudo header {
+input#escuro:checked~#tudo header {
 
     filter: invert(1);
     background-color: rgb(70, 70, 70);
 
 }
 
-input[type="checkbox"]:checked~#tudo-d header {
+input#escuro:checked~#tudo-d header {
 
     filter: invert(1);
     background-color: rgb(70, 70, 70);
@@ -519,103 +539,115 @@ input[type="checkbox"]:checked~#tudo-d header {
 }
 
 
-input[type="checkbox"]:checked~#tudo header nav ul .menu {
+input#escuro:checked~#tudo header nav ul .menu {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo-d header nav ul .menu {
+input#escuro:checked~#tudo-d header nav ul .menu {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo header nav ul .menu:hover {
+input#escuro:checked~#tudo header nav ul .menu:hover {
 
     background-color: rgb(215, 215, 215);
 
 }
 
-input[type="checkbox"]:checked~#tudo-d header nav ul .menu:hover {
+input#escuro:checked~#tudo-d header nav ul .menu:hover {
 
     background-color: rgb(215, 215, 215);
 
 }
 
-input[type="checkbox"]:checked~h2 {
+input#escuro:checked~#tudo-d .content video {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo .elemento {
+input#escuro:checked~h2 {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo .ametais {
+input#escuro:checked~#tudo .elemento {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo .alcalinos {
+input#escuro:checked~#tudo .ametais {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo .terrosos {
+input#escuro:checked~#tudo .alcalinos {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo .metais {
+input#escuro:checked~#tudo .terrosos {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo .nobres {
+input#escuro:checked~#tudo .metais {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo .halos {
+input#escuro:checked~#tudo .nobres {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo .semimetais {
+input#escuro:checked~#tudo .halos {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo .outro {
+input#escuro:checked~#tudo .semimetais {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo .lantas {
+input#escuro:checked~#tudo .outro {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo .acts {
+input#escuro:checked~#tudo .lantas {
 
     filter: invert(1);
 
 }
 
-input[type="checkbox"]:checked~#tudo .info {
+input#escuro:checked~#tudo .acts {
+
+    filter: invert(1);
+
+}
+
+input#escuro:checked~#tudo video{
+
+    filter: invert(1);
+
+}
+
+input#escuro:checked~#tudo .info {
 
     filter: invert(1);
     background-color: rgb(63, 58, 58) !important;
@@ -623,11 +655,118 @@ input[type="checkbox"]:checked~#tudo .info {
 
 }
 
-input[type="checkbox"]:checked~#tudo .info2 {
+input#escuro:checked~#tudo .info2 {
 
     filter: invert(1);
     background-color: rgb(63, 58, 58) !important;
     color: white !important;
+
+}
+
+input#vidro:checked + input#escuro:checked~#tudo .elemento{
+
+    color: aliceblue !important; 
+/*  verificar depois */
+}
+
+input#vidro:checked~#tudo .ametal{
+
+    background-color: rgba(56, 149, 97, 0.11) !important;
+    border: seagreen 3px solid !important;
+    box-shadow: inset -5px -5px 3px rgba(16, 109, 57, 0.3), inset 5px 5px 3px rgba(16, 109, 57, 0.3) !important;
+    color: rgb(76, 169, 117) !important;
+    text-shadow: 0px 0px 1px seagreen;
+
+}
+
+input#vidro:checked~#tudo .alcalino{
+
+    background-color: rgba(255, 150, 10, 0.11) !important;
+    border: darkorange 3px solid !important;
+    box-shadow: inset -5px -5px 3px rgba(225, 110, 0, 0.3), inset 5px 5px 3px rgba(225, 110, 0, 0.3) !important;
+    color: rgb(255, 170, 30) !important;
+    text-shadow: 0px 0px 1px darkorange;
+
+}
+
+input#vidro:checked~#tudo .terroso{
+
+    background-color: rgba(255, 225, 10, 0.11) !important;
+    border: gold 3px solid !important;
+    box-shadow: inset -5px -5px 3px rgba(225, 185, 0, 0.3), inset 5px 5px 3px rgba(225, 185, 0, 0.3) !important;
+    color: rgb(255, 245, 30) !important;
+    text-shadow: 0px 0px 1px gold;
+
+}
+
+input#vidro:checked~#tudo .transição{
+
+    background-color: rgba(138, 50, 50, 0.11) !important;
+    border: rgb(128, 40, 40) 3px solid !important;
+    box-shadow: inset -5px -5px 3px rgba(98, 10, 10, 0.3), inset 5px 5px 3px rgba(98, 10, 10, 0.3) !important;
+    color: rgb(158, 70, 70) !important;
+    text-shadow: 0px 0px 2px rgb(128, 40, 40);
+
+
+}
+
+input#vidro:checked~#tudo .nobre{
+
+    background-color: rgba(112, 61, 163, 0.11) !important;
+    border: rebeccapurple 3px solid !important;
+    box-shadow: inset -5px -5px 3px rgba(72, 21, 123, 0.3), inset 5px 5px 3px rgba(72, 21, 123, 0.3) !important;
+    color: rgb(132, 81, 183) !important;
+    text-shadow: 0px 0px 1px rebeccapurple;
+
+}
+
+input#vidro:checked~#tudo .halo{
+
+    background-color: rgba(75, 115, 235, 0.11) !important;
+    border: royalblue 3px solid !important;
+    box-shadow: inset -5px -5px 3px rgba(35, 75, 195, 0.3), inset 5px 5px 3px rgba(35, 75, 195, 0.3) !important;
+    color: rgb(95, 135, 255) !important;
+    text-shadow: 0px 0px 1px royalblue;
+
+}
+
+input#vidro:checked~#tudo .semi{
+
+    background-color: rgba(10, 138, 138, 0.11) !important;
+    border: teal 3px solid !important;
+    box-shadow: inset -5px -5px 3px rgba(0, 98, 98, 0.3), inset 5px 5px 3px rgba(0, 98, 98, 0.3) !important;
+    color: rgb(30, 158, 158) !important;
+    text-shadow: 0px 0px 1px teal;
+
+}
+
+input#vidro:checked~#tudo .outros{
+
+    background-color: rgba(40, 154, 255, 0.11) !important;
+    border: dodgerblue 3px solid !important;
+    box-shadow: inset -5px -5px 3px rgba(0, 114, 225, 0.3), inset 5px 5px 3px rgba(0, 114, 225, 0.3) !important;
+    color: rgb(60, 174, 255) !important;
+    text-shadow: 0px 0px 1px dodgerblue;
+
+}
+
+input#vidro:checked~#tudo .lanta{
+
+    background-color: rgba(112, 215, 180, 0.11) !important;
+    border: mediumaquamarine 3px solid !important;
+    box-shadow: inset -5px -5px 3px rgba(72, 175, 140, 0.3), inset 5px 5px 3px rgba(72, 175, 140, 0.3) !important;
+    color: rgb(132, 235, 200) !important;
+    text-shadow: 0px 0px 1px mediumaquamarine;
+
+}
+
+input#vidro:checked~#tudo .act{
+
+    background-color: rgba(231, 170, 231, 0.11) !important;
+    border: plum 3px solid !important;
+    box-shadow: inset -5px -5px 3px rgba(191, 130, 191, 0.3), inset 5px 5px 3px rgba(191, 130, 191, 0.3) !important;
+    color: rgb(251, 190, 251) !important;
+    text-shadow: 0px 0px 1px plum;
 
 }
 
@@ -1128,13 +1267,15 @@ input[type="checkbox"]:checked~#tudo .info2 {
 }
 
 .content {
+
     text-align: center;
     margin: 0 auto;
     width: 60%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: aliceblue;
-    border: aliceblue solid;
-
+    background-color: rgb(225, 225, 225);
+    border: rgb(230, 230, 230) solid;
+    padding: 4px;
+    box-shadow: rgb(200, 200, 200) 0px 0px 6px;
 
 }
 
@@ -1146,6 +1287,7 @@ header {
     padding: 1px;
     border-bottom: 1px black solid;
     box-shadow: 0px 0px 5px black;
+    z-index: 20;
 }
 
 nav ul {
