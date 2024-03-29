@@ -6,18 +6,18 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
 
-
 }
 
 
 #tudo {
 
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(215, 215, 215);
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     cursor: default;
+    transition: 1s;
 
 }
 
@@ -29,6 +29,7 @@ body {
     right: 0;
     left: 0;
     cursor: default;
+    transition: 1s;
 
 }
 
@@ -61,6 +62,7 @@ h2#vidro-t {
     font-size: 54px;
     text-align: center;
     z-index: 5 !important;
+    transition: 1s;
 
 }
 
@@ -74,6 +76,7 @@ div.tabela {
     grid-auto-columns: 5.38%;
     grid-auto-rows: 14%;
     gap: 1px;
+    transition: 1s;
 
 }
 
@@ -87,6 +90,7 @@ div.tabela2 {
     grid-auto-columns: 5.38%;
     grid-auto-rows: 49.5%;
     gap: 1px;
+    transition: 1s;
 
 }
 
@@ -118,6 +122,7 @@ div.tabela2 {
     padding-left: 5%;
     border-radius: 5% 20%;
     line-height: 130%;
+    transition: 1s;
 
 }
 
@@ -136,6 +141,7 @@ div.tabela2 {
     padding-left: 2%;
     border-radius: 5% 20%;
     line-height: 130%;
+    transition: 1s;
 
 }
 
@@ -143,13 +149,13 @@ div.tabela2 {
 
     box-shadow: inset 0px 0px 5px black;
     border-radius: 5%;
-    transition: 0.4;
     position: relative;
     padding: 10% 0%;
     border: 1px solid black !important;
     color: black;
     text-align: center;
     z-index: 6;
+    transition: 1s;
 
 }
 
@@ -491,6 +497,35 @@ a {
 
 }
 
+input[type="checkbox"]{
+
+    all: unset;
+    border-radius: 100%;
+    margin: 3px;
+    border: 1px solid black;
+    width: 11px;
+    height: 11px;
+    display: block;
+    background-color: none;
+    transition: 0.3s;
+
+}
+
+input[type="checkbox"]:hover{
+
+    transform: scale(2);
+    border: solid rgb(0, 140, 255) 2px;
+    transition: 0.3s;
+
+}
+
+input[type="checkbox"]:checked:hover{
+
+    border: solid white 2px;
+    transition: 0.3s;
+
+}
+
 input[type="checkbox"]#escuro {
 
     position: absolute;
@@ -498,6 +533,12 @@ input[type="checkbox"]#escuro {
     top: 10px;
     right: 20px;
     transform: scale(1.8);
+
+}
+
+input[type="checkbox"]#escuro:checked {
+
+    background-color: rgb(38, 83, 219);
 
 }
 
@@ -511,9 +552,17 @@ input[type="checkbox"]#vidro {
 
 }
 
+input[type="checkbox"]#vidro:checked {
+
+    background-color: rgb(38, 83, 219);
+
+}
+
 input#escuro:checked~#tudo {
 
     filter: invert(1);
+    transition: 1s;
+    background-color: rgb(225, 225, 225);
 
 }
 
@@ -521,6 +570,7 @@ input#escuro:checked~#tudo-d {
 
     filter: invert(1);
     background-image: url();
+    transition: 1s;
 
 }
 
@@ -528,6 +578,7 @@ input#escuro:checked~#tudo header {
 
     filter: invert(1);
     background-color: rgb(70, 70, 70);
+    transition: 1s;
 
 }
 
@@ -535,6 +586,7 @@ input#escuro:checked~#tudo-d header {
 
     filter: invert(1);
     background-color: rgb(70, 70, 70);
+    transition: 1s;
 
 }
 
@@ -542,108 +594,126 @@ input#escuro:checked~#tudo-d header {
 input#escuro:checked~#tudo header nav ul .menu {
 
     filter: invert(1);
+    transition: 1s;
 
 }
 
 input#escuro:checked~#tudo-d header nav ul .menu {
 
     filter: invert(1);
+    transition: 1s;
 
 }
 
 input#escuro:checked~#tudo header nav ul .menu:hover {
 
     background-color: rgb(215, 215, 215);
+    transition: 1s;
 
 }
 
 input#escuro:checked~#tudo-d header nav ul .menu:hover {
 
     background-color: rgb(215, 215, 215);
+    transition: 1s;
 
 }
 
 input#escuro:checked~#tudo-d .content video {
 
     filter: invert(1);
+    transition: 1s;
 
 }
 
 input#escuro:checked~h2 {
 
     filter: invert(1);
+    transition: 1s;
 
 }
 
 input#escuro:checked~#tudo .elemento {
 
     filter: invert(1);
+    transition: 1s;
 
 }
 
 input#escuro:checked~#tudo .ametais {
 
     filter: invert(1);
+    transition: 1s;
 
 }
 
 input#escuro:checked~#tudo .alcalinos {
 
     filter: invert(1);
+    transition: 1s;
 
 }
 
 input#escuro:checked~#tudo .terrosos {
 
     filter: invert(1);
+    transition: 1s;
 
 }
 
 input#escuro:checked~#tudo .metais {
 
     filter: invert(1);
+    transition: 1s;
 
 }
 
 input#escuro:checked~#tudo .nobres {
 
     filter: invert(1);
+    transition: 1s;
 
 }
 
 input#escuro:checked~#tudo .halos {
 
     filter: invert(1);
+    transition: 1s;
 
 }
 
 input#escuro:checked~#tudo .semimetais {
 
     filter: invert(1);
+    transition: 1s;
 
 }
 
 input#escuro:checked~#tudo .outro {
 
     filter: invert(1);
+    transition: 1s;
 
 }
 
 input#escuro:checked~#tudo .lantas {
 
     filter: invert(1);
+    transition: 1s;
 
 }
 
 input#escuro:checked~#tudo .acts {
 
     filter: invert(1);
+    transition: 1s;
 
 }
 
 input#escuro:checked~#tudo video{
 
     filter: invert(1);
+    transition: 1s;
 
 }
 
@@ -652,6 +722,7 @@ input#escuro:checked~#tudo .info {
     filter: invert(1);
     background-color: rgb(63, 58, 58) !important;
     color: white !important;
+    transition: 1s;
 
 }
 
@@ -660,13 +731,8 @@ input#escuro:checked~#tudo .info2 {
     filter: invert(1);
     background-color: rgb(63, 58, 58) !important;
     color: white !important;
+    transition: 1s;
 
-}
-
-input#vidro:checked + input#escuro:checked~#tudo .elemento{
-
-    color: aliceblue !important; 
-/*  verificar depois */
 }
 
 input#vidro:checked~#tudo .ametal{
@@ -676,16 +742,32 @@ input#vidro:checked~#tudo .ametal{
     box-shadow: inset -5px -5px 3px rgba(16, 109, 57, 0.3), inset 5px 5px 3px rgba(16, 109, 57, 0.3) !important;
     color: rgb(76, 169, 117) !important;
     text-shadow: 0px 0px 1px seagreen;
+    transition: 1s;
 
 }
 
-input#vidro:checked~#tudo .alcalino{
+input#vidro:checked~#tudo .ametal:hover{
+
+    box-shadow:  0px 0px 12px 4px rgb(6, 99, 47), inset 0px 0px 8px black;
+    transition: 0.4s;
+
+}
+
+input#vidro:checked~#tudo .alcalino{  /*voltar*/
 
     background-color: rgba(255, 150, 10, 0.11) !important;
     border: darkorange 3px solid !important;
     box-shadow: inset -5px -5px 3px rgba(225, 110, 0, 0.3), inset 5px 5px 3px rgba(225, 110, 0, 0.3) !important;
     color: rgb(255, 170, 30) !important;
     text-shadow: 0px 0px 1px darkorange;
+    transition: 1s;
+
+}
+
+input#vidro:checked~#tudo .alcalino:hover{
+
+    box-shadow: 0px 0px 12px 4px rgb(215, 100, 0), inset 0px 0px 8px black;
+    transition: 0.4s;
 
 }
 
@@ -696,6 +778,14 @@ input#vidro:checked~#tudo .terroso{
     box-shadow: inset -5px -5px 3px rgba(225, 185, 0, 0.3), inset 5px 5px 3px rgba(225, 185, 0, 0.3) !important;
     color: rgb(255, 245, 30) !important;
     text-shadow: 0px 0px 1px gold;
+    transition: 1s;
+
+}
+
+input#vidro:checked~#tudo .terroso:hover{
+
+    box-shadow: 0px 0px 12px 4px rgb(225, 175, 0), inset 0px 0px 8px black;
+    transition: 0.4s;
 
 }
 
@@ -706,7 +796,14 @@ input#vidro:checked~#tudo .transição{
     box-shadow: inset -5px -5px 3px rgba(98, 10, 10, 0.3), inset 5px 5px 3px rgba(98, 10, 10, 0.3) !important;
     color: rgb(158, 70, 70) !important;
     text-shadow: 0px 0px 2px rgb(128, 40, 40);
+    transition: 1s;
 
+}
+
+input#vidro:checked~#tudo .transição:hover{
+
+    box-shadow: 0px 0px 12px 4px rgb(88, 0, 0), inset 0px 0px 8px black;
+    transition: 0.4s;
 
 }
 
@@ -717,6 +814,14 @@ input#vidro:checked~#tudo .nobre{
     box-shadow: inset -5px -5px 3px rgba(72, 21, 123, 0.3), inset 5px 5px 3px rgba(72, 21, 123, 0.3) !important;
     color: rgb(132, 81, 183) !important;
     text-shadow: 0px 0px 1px rebeccapurple;
+    transition: 1s;
+
+}
+
+input#vidro:checked~#tudo .nobre:hover{
+
+    box-shadow: 0px 0px 12px 4px rgb(62, 11, 113), inset 0px 0px 8px black;
+    transition: 0.4s;
 
 }
 
@@ -727,6 +832,14 @@ input#vidro:checked~#tudo .halo{
     box-shadow: inset -5px -5px 3px rgba(35, 75, 195, 0.3), inset 5px 5px 3px rgba(35, 75, 195, 0.3) !important;
     color: rgb(95, 135, 255) !important;
     text-shadow: 0px 0px 1px royalblue;
+    transition: 1s;
+
+}
+
+input#vidro:checked~#tudo .halo:hover{
+
+    box-shadow: 0px 0px 12px 4px rgb(25, 65, 185), inset 0px 0px 8px black;
+    transition: 0.4s;
 
 }
 
@@ -737,6 +850,14 @@ input#vidro:checked~#tudo .semi{
     box-shadow: inset -5px -5px 3px rgba(0, 98, 98, 0.3), inset 5px 5px 3px rgba(0, 98, 98, 0.3) !important;
     color: rgb(30, 158, 158) !important;
     text-shadow: 0px 0px 1px teal;
+    transition: 1s;
+
+}
+
+input#vidro:checked~#tudo .semi:hover{
+
+    box-shadow: 0px 0px 12px 4px rgb(0, 88, 88), inset 0px 0px 8px black;
+    transition: 0.4s;
 
 }
 
@@ -747,6 +868,14 @@ input#vidro:checked~#tudo .outros{
     box-shadow: inset -5px -5px 3px rgba(0, 114, 225, 0.3), inset 5px 5px 3px rgba(0, 114, 225, 0.3) !important;
     color: rgb(60, 174, 255) !important;
     text-shadow: 0px 0px 1px dodgerblue;
+    transition: 1s;
+
+}
+
+input#vidro:checked~#tudo .outros:hover{
+
+    box-shadow: 0px 0px 12px 4px rgb(0, 104, 215), inset 0px 0px 8px black;
+    transition: 0.4s;
 
 }
 
@@ -757,8 +886,17 @@ input#vidro:checked~#tudo .lanta{
     box-shadow: inset -5px -5px 3px rgba(72, 175, 140, 0.3), inset 5px 5px 3px rgba(72, 175, 140, 0.3) !important;
     color: rgb(132, 235, 200) !important;
     text-shadow: 0px 0px 1px mediumaquamarine;
+    transition: 1s;
 
 }
+
+input#vidro:checked~#tudo .lanta:hover{
+
+    box-shadow: 0px 0px 12px 4px rgb(62, 165, 130), inset 0px 0px 8px black;
+    transition: 0.4s;
+
+}
+
 
 input#vidro:checked~#tudo .act{
 
@@ -767,6 +905,14 @@ input#vidro:checked~#tudo .act{
     box-shadow: inset -5px -5px 3px rgba(191, 130, 191, 0.3), inset 5px 5px 3px rgba(191, 130, 191, 0.3) !important;
     color: rgb(251, 190, 251) !important;
     text-shadow: 0px 0px 1px plum;
+    transition: 1s;
+
+}
+
+input#vidro:checked~#tudo .act:hover{
+
+    box-shadow: 0px 0px 12px 4px rgb(181, 120, 181), inset 0px 0px 8px black;
+    transition: 0.4s;
 
 }
 
