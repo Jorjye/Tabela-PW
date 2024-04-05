@@ -544,17 +544,41 @@ input[type="checkbox"]#escuro:checked {
 
 input[type="checkbox"]#vidro {
 
+    cursor: default;
     position: absolute;
     z-index: 10;
     top: 45px;
     right: 20px;
+    opacity: 0;
     transform: scale(1.8);
+    transition: 1s;
+
+}
+
+h2#vidro-t{
+
+    cursor: default;
+    opacity: 0;
 
 }
 
 input[type="checkbox"]#vidro:checked {
 
     background-color: rgb(38, 83, 219);
+
+}
+
+input#escuro:checked ~ input#vidro{
+
+    opacity: 1 !important;
+    transition: 1s;
+
+}
+
+input#escuro:checked ~ #vidro-t{
+
+    opacity: 1 !important;
+    transition: 1s;
 
 }
 
@@ -748,7 +772,7 @@ input#vidro:checked~#tudo .ametal{
 
 input#vidro:checked~#tudo .ametal:hover{
 
-    box-shadow:  0px 0px 12px 4px rgb(6, 99, 47), inset 0px 0px 8px black;
+    box-shadow: inset -5px -5px 6px rgba(16, 109, 57, 0.3), inset 5px 5px 6px rgba(16, 109, 57, 0.3), 0px 0px 12px 4px rgb(6, 99, 47), inset 0px 0px 8px black !important;
     transition: 0.4s;
 
 }
@@ -766,7 +790,7 @@ input#vidro:checked~#tudo .alcalino{  /*voltar*/
 
 input#vidro:checked~#tudo .alcalino:hover{
 
-    box-shadow: 0px 0px 12px 4px rgb(215, 100, 0), inset 0px 0px 8px black;
+    box-shadow: inset -5px -5px 6px rgba(225, 110, 0, 0.3), inset 5px 5px 6px rgba(225, 110, 0, 0.3), 0px 0px 12px 4px rgb(215, 100, 0), inset 0px 0px 8px black !important;
     transition: 0.4s;
 
 }
@@ -784,7 +808,7 @@ input#vidro:checked~#tudo .terroso{
 
 input#vidro:checked~#tudo .terroso:hover{
 
-    box-shadow: 0px 0px 12px 4px rgb(225, 175, 0), inset 0px 0px 8px black;
+    box-shadow: inset -5px -5px 6px rgba(225, 185, 0, 0.3), inset 5px 5px 6px rgba(225, 185, 0, 0.3), 0px 0px 12px 4px rgb(225, 175, 0), inset 0px 0px 8px black !important;
     transition: 0.4s;
 
 }
@@ -802,7 +826,7 @@ input#vidro:checked~#tudo .transição{
 
 input#vidro:checked~#tudo .transição:hover{
 
-    box-shadow: 0px 0px 12px 4px rgb(88, 0, 0), inset 0px 0px 8px black;
+    box-shadow: inset -5px -5px 6px rgba(98, 10, 10, 0.3), inset 5px 5px 6px rgba(98, 10, 10, 0.3), 0px 0px 12px 4px rgb(88, 0, 0), inset 0px 0px 8px black !important;
     transition: 0.4s;
 
 }
@@ -820,7 +844,7 @@ input#vidro:checked~#tudo .nobre{
 
 input#vidro:checked~#tudo .nobre:hover{
 
-    box-shadow: 0px 0px 12px 4px rgb(62, 11, 113), inset 0px 0px 8px black;
+    box-shadow: inset -5px -5px 6px rgba(72, 21, 123, 0.3), inset 5px 5px 6px rgba(72, 21, 123, 0.3), 0px 0px 12px 4px rgb(62, 11, 113), inset 0px 0px 8px black !important;
     transition: 0.4s;
 
 }
@@ -838,7 +862,7 @@ input#vidro:checked~#tudo .halo{
 
 input#vidro:checked~#tudo .halo:hover{
 
-    box-shadow: 0px 0px 12px 4px rgb(25, 65, 185), inset 0px 0px 8px black;
+    box-shadow: inset -5px -5px 6px rgba(35, 75, 195, 0.3), inset 5px 5px 6px rgba(35, 75, 195, 0.3), 0px 0px 12px 4px rgb(25, 65, 185), inset 0px 0px 8px black !important;
     transition: 0.4s;
 
 }
@@ -856,7 +880,7 @@ input#vidro:checked~#tudo .semi{
 
 input#vidro:checked~#tudo .semi:hover{
 
-    box-shadow: 0px 0px 12px 4px rgb(0, 88, 88), inset 0px 0px 8px black;
+    box-shadow: inset -5px -5px 6px rgba(0, 98, 98, 0.3), inset 5px 5px 6px rgba(0, 98, 98, 0.3), 0px 0px 12px 4px rgb(0, 88, 88), inset 0px 0px 8px black !important;
     transition: 0.4s;
 
 }
@@ -874,7 +898,7 @@ input#vidro:checked~#tudo .outros{
 
 input#vidro:checked~#tudo .outros:hover{
 
-    box-shadow: 0px 0px 12px 4px rgb(0, 104, 215), inset 0px 0px 8px black;
+    box-shadow: inset -5px -5px 6px rgba(0, 114, 225, 0.3), inset 5px 5px 6px rgba(0, 114, 225, 0.3), 0px 0px 12px 4px rgb(0, 104, 215), inset 0px 0px 8px black !important; 
     transition: 0.4s;
 
 }
@@ -892,7 +916,7 @@ input#vidro:checked~#tudo .lanta{
 
 input#vidro:checked~#tudo .lanta:hover{
 
-    box-shadow: 0px 0px 12px 4px rgb(62, 165, 130), inset 0px 0px 8px black;
+    box-shadow: inset -5px -5px 6px rgba(72, 175, 140, 0.3), inset 5px 5px 6px rgba(72, 175, 140, 0.3), 0px 0px 12px 4px rgb(62, 165, 130), inset 0px 0px 8px black !important;
     transition: 0.4s;
 
 }
@@ -911,7 +935,7 @@ input#vidro:checked~#tudo .act{
 
 input#vidro:checked~#tudo .act:hover{
 
-    box-shadow: 0px 0px 12px 4px rgb(181, 120, 181), inset 0px 0px 8px black;
+    box-shadow: inset -5px -5px 6px rgba(191, 130, 191, 0.3), inset 5px 5px 6px rgba(191, 130, 191, 0.3), 0px 0px 12px 4px rgb(181, 120, 181), inset 0px 0px 8px black !important;
     transition: 0.4s;
 
 }
