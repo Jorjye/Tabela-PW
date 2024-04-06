@@ -759,7 +759,7 @@ input#escuro:checked~#tudo .info2 {
 
 }
 
-input#vidro:checked~#tudo .ametal{
+.ametal.vidro{
 
     background-color: rgba(56, 149, 97, 0.11) !important;
     border: seagreen 3px solid !important;
@@ -770,14 +770,14 @@ input#vidro:checked~#tudo .ametal{
 
 }
 
-input#vidro:checked~#tudo .ametal:hover{
+.ametal.vidro:hover{
 
     box-shadow: inset -5px -5px 6px rgba(16, 109, 57, 0.3), inset 5px 5px 6px rgba(16, 109, 57, 0.3), 0px 0px 12px 4px rgb(6, 99, 47), inset 0px 0px 8px black !important;
     transition: 0.4s;
 
 }
 
-input#vidro:checked~#tudo .alcalino{  /*voltar*/
+.alcalino.vidro{  /*voltar*/
 
     background-color: rgba(255, 150, 10, 0.11) !important;
     border: darkorange 3px solid !important;
@@ -788,14 +788,14 @@ input#vidro:checked~#tudo .alcalino{  /*voltar*/
 
 }
 
-input#vidro:checked~#tudo .alcalino:hover{
+.alcalino.vidro:hover{
 
     box-shadow: inset -5px -5px 6px rgba(225, 110, 0, 0.3), inset 5px 5px 6px rgba(225, 110, 0, 0.3), 0px 0px 12px 4px rgb(215, 100, 0), inset 0px 0px 8px black !important;
     transition: 0.4s;
 
 }
 
-input#vidro:checked~#tudo .terroso{
+.terroso.vidro{
 
     background-color: rgba(255, 225, 10, 0.11) !important;
     border: gold 3px solid !important;
@@ -806,14 +806,14 @@ input#vidro:checked~#tudo .terroso{
 
 }
 
-input#vidro:checked~#tudo .terroso:hover{
+.terroso.vidro:hover{
 
     box-shadow: inset -5px -5px 6px rgba(225, 185, 0, 0.3), inset 5px 5px 6px rgba(225, 185, 0, 0.3), 0px 0px 12px 4px rgb(225, 175, 0), inset 0px 0px 8px black !important;
     transition: 0.4s;
 
 }
 
-input#vidro:checked~#tudo .transição{
+.transição.vidro{
 
     background-color: rgba(138, 50, 50, 0.11) !important;
     border: rgb(128, 40, 40) 3px solid !important;
@@ -824,14 +824,14 @@ input#vidro:checked~#tudo .transição{
 
 }
 
-input#vidro:checked~#tudo .transição:hover{
+.transição.vidro:hover{
 
     box-shadow: inset -5px -5px 6px rgba(98, 10, 10, 0.3), inset 5px 5px 6px rgba(98, 10, 10, 0.3), 0px 0px 12px 4px rgb(88, 0, 0), inset 0px 0px 8px black !important;
     transition: 0.4s;
 
 }
 
-input#vidro:checked~#tudo .nobre{
+.nobre.vidro{
 
     background-color: rgba(112, 61, 163, 0.11) !important;
     border: rebeccapurple 3px solid !important;
@@ -842,14 +842,14 @@ input#vidro:checked~#tudo .nobre{
 
 }
 
-input#vidro:checked~#tudo .nobre:hover{
+.nobre.vidro:hover{
 
     box-shadow: inset -5px -5px 6px rgba(72, 21, 123, 0.3), inset 5px 5px 6px rgba(72, 21, 123, 0.3), 0px 0px 12px 4px rgb(62, 11, 113), inset 0px 0px 8px black !important;
     transition: 0.4s;
 
 }
 
-input#vidro:checked~#tudo .halo{
+.halo.vidro{
 
     background-color: rgba(75, 115, 235, 0.11) !important;
     border: royalblue 3px solid !important;
@@ -860,14 +860,14 @@ input#vidro:checked~#tudo .halo{
 
 }
 
-input#vidro:checked~#tudo .halo:hover{
+.halo.vidro:hover{
 
     box-shadow: inset -5px -5px 6px rgba(35, 75, 195, 0.3), inset 5px 5px 6px rgba(35, 75, 195, 0.3), 0px 0px 12px 4px rgb(25, 65, 185), inset 0px 0px 8px black !important;
     transition: 0.4s;
 
 }
 
-input#vidro:checked~#tudo .semi{
+.semi.vidro{
 
     background-color: rgba(10, 138, 138, 0.11) !important;
     border: teal 3px solid !important;
@@ -878,14 +878,14 @@ input#vidro:checked~#tudo .semi{
 
 }
 
-input#vidro:checked~#tudo .semi:hover{
+.semi.vidro:hover{
 
     box-shadow: inset -5px -5px 6px rgba(0, 98, 98, 0.3), inset 5px 5px 6px rgba(0, 98, 98, 0.3), 0px 0px 12px 4px rgb(0, 88, 88), inset 0px 0px 8px black !important;
     transition: 0.4s;
 
 }
 
-input#vidro:checked~#tudo .outros{
+.outros.vidro{
 
     background-color: rgba(40, 154, 255, 0.11) !important;
     border: dodgerblue 3px solid !important;
@@ -896,14 +896,14 @@ input#vidro:checked~#tudo .outros{
 
 }
 
-input#vidro:checked~#tudo .outros:hover{
+.outros.vidro:hover{
 
     box-shadow: inset -5px -5px 6px rgba(0, 114, 225, 0.3), inset 5px 5px 6px rgba(0, 114, 225, 0.3), 0px 0px 12px 4px rgb(0, 104, 215), inset 0px 0px 8px black !important; 
     transition: 0.4s;
 
 }
 
-input#vidro:checked~#tudo .lanta{
+.lanta.vidro{
 
     background-color: rgba(112, 215, 180, 0.11) !important;
     border: mediumaquamarine 3px solid !important;
@@ -914,7 +914,7 @@ input#vidro:checked~#tudo .lanta{
 
 }
 
-input#vidro:checked~#tudo .lanta:hover{
+.lanta.vidro:hover{
 
     box-shadow: inset -5px -5px 6px rgba(72, 175, 140, 0.3), inset 5px 5px 6px rgba(72, 175, 140, 0.3), 0px 0px 12px 4px rgb(62, 165, 130), inset 0px 0px 8px black !important;
     transition: 0.4s;
@@ -922,7 +922,7 @@ input#vidro:checked~#tudo .lanta:hover{
 }
 
 
-input#vidro:checked~#tudo .act{
+.act.vidro{
 
     background-color: rgba(231, 170, 231, 0.11) !important;
     border: plum 3px solid !important;
@@ -933,7 +933,7 @@ input#vidro:checked~#tudo .act{
 
 }
 
-input#vidro:checked~#tudo .act:hover{
+.act.vidro:hover{
 
     box-shadow: inset -5px -5px 6px rgba(191, 130, 191, 0.3), inset 5px 5px 6px rgba(191, 130, 191, 0.3), 0px 0px 12px 4px rgb(181, 120, 181), inset 0px 0px 8px black !important;
     transition: 0.4s;
